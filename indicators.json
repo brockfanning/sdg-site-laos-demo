@@ -2,28 +2,36 @@
   {
     "goal": {
       "id": "1",
-      "title": "End poverty in all its forms everywhere",
+      "title": "ຢຸດຕິຄວາມທຸກຍາກໃນທຸກຮູບແບບຂອງມັນຢູ່ທົ່ວທຸກແຫ່ງ",
       "indicators": [
         
         {
           "id": "1-1-1",
-          "title": "Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ຕໍ່າກວ່າເສັ້ນຄວາມທຸກຍາກສາກົນ, ໂດຍເພດ, ອາຍຸ, ສະຖານະພາບການຈ້າງງານແລະທີ່ຕັ້ງພູມສາດ (ຕົວເມືອງ / ຊົນນະບົດ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-2-1",
-          "title": "Proportion of population living below the national poverty line, by sex and age",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ ດຳ ລົງຊີວິດຕໍ່າກວ່າເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ, ໂດຍເພດແລະອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-1-a",
+          "title": "global_indicators.1-2-1-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/1-2-1-a",
           "status": "notstarted"
         },
         {
           "id": "1-2-2",
-          "title": "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ຊາຍ, ແມ່ຍິງແລະເດັກນ້ອຍທຸກໄວທີ່ ດຳ ລົງຊີວິດຢູ່ໃນຄວາມທຸກຍາກໃນທຸກຂະ ໜາດ ຂອງມັນຕາມ ຄຳ ນິຍາມຂອງຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-2-2",
@@ -31,7 +39,7 @@
         },
         {
           "id": "1-3-1",
-          "title": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ປົກຄຸມດ້ວຍຊັ້ນ / ລະບົບປົກປ້ອງທາງສັງຄົມ, ໂດຍເພດ, ຈຳ ແນກເດັກ, ຄົນຫວ່າງງານ, ຜູ້ສູງອາຍຸ, ຄົນພິການ, ແມ່ຍິງຖືພາ, ເດັກເກີດ ໃໝ່, ຜູ້ຖືກເຄາະຮ້າຍຈາກການເຮັດວຽກແລະຜູ້ທຸກຍາກແລະຜູ້ດ້ອຍໂອກາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-3-1",
@@ -39,7 +47,7 @@
         },
         {
           "id": "1-4-1",
-          "title": "Proportion of population living in households with access to basic services",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ອາໄສຢູ່ໃນຄົວເຮືອນທີ່ມີການເຂົ້າເຖິງການບໍລິການຂັ້ນພື້ນຖານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-4-1",
@@ -47,7 +55,7 @@
         },
         {
           "id": "1-4-2",
-          "title": "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງຜູ້ໃຫຍ່ທັງ ໝົດ ທີ່ມີສິດຄອບຄອງ ນຳ ໃຊ້ທີ່ດິນ, ມີເອກະສານທີ່ຖືກຮັບຮູ້ຢ່າງຖືກຕ້ອງຕາມກົດ ໝາຍ, ແລະຜູ້ທີ່ເຫັນວ່າສິດຂອງເຂົາເຈົ້າທີ່ດິນມີຄວາມປອດໄພ, ເພດແລະປະເພດຂອງສິດຄອບຄອງ ນຳ ໃຊ້",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-4-2",
@@ -55,7 +63,7 @@
         },
         {
           "id": "1-5-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "ຈຳ ນວນຜູ້ເສຍຊີວິດ, ຜູ້ສູນຫາຍແລະຜູ້ໄດ້ຮັບຜົນກະທົບໂດຍກົງແມ່ນໄພພິບັດຕໍ່ປະຊາກອນ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-5-1",
@@ -63,7 +71,7 @@
         },
         {
           "id": "1-5-2",
-          "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
+          "title": "ການສູນເສຍທາງດ້ານເສດຖະກິດໂດຍກົງແມ່ນຍ້ອນໄພພິບັດທີ່ຕິດພັນກັບຜະລິດຕະພັນພາຍໃນ (GDP) ທົ່ວໂລກ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-5-2",
@@ -71,7 +79,7 @@
         },
         {
           "id": "1-5-3",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "ຈຳ ນວນປະເທດທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດໃຫ້ສອດຄ່ອງກັບຂອບໂຄງການ Sendai ສຳ ລັບການຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດປີ 2015–2030",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-5-3",
@@ -79,7 +87,7 @@
         },
         {
           "id": "1-5-4",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "ອັດຕາສ່ວນຂອງລັດຖະບານທ້ອງຖິ່ນທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດໃນທ້ອງຖິ່ນໃຫ້ສອດຄ່ອງກັບຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-5-4",
@@ -87,7 +95,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income",
+          "title": "ສັດສ່ວນຂອງຊັບພະຍາກອນທີ່ຜະລິດຢູ່ພາຍໃນປະເທດຈັດສັນໂດຍກົງໃຫ້ແກ່ໂຄງການຫຼຸດຜ່ອນຄວາມທຸກຍາກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-a-1",
@@ -95,7 +103,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "Proportion of total government spending on essential services (education, health and social protection)",
+          "title": "ອັດຕາສ່ວນຂອງການໃຊ້ຈ່າຍທັງ ໝົດ ຂອງລັດຖະບານ ສຳ ລັບການບໍລິການທີ່ ຈຳ ເປັນ (ການສຶກສາ, ສາທາລະນະສຸກແລະການປົກປ້ອງສັງຄົມ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-a-2",
@@ -103,7 +111,7 @@
         },
         {
           "id": "1-b-1",
-          "title": "Pro-poor public social spending",
+          "title": "ອັດຕາສ່ວນຂອງການໃຊ້ຈ່າຍຄືນຂອງລັດຖະບານແລະທຶນຕໍ່ຂະ ແໜງ ການທີ່ໃຫ້ຜົນປະໂຫຍດສ່ວນໃຫຍ່ແກ່ແມ່ຍິງ, ກຸ່ມຄົນທຸກຍາກແລະກຸ່ມສ່ຽງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/1-b-1",
@@ -114,12 +122,12 @@
   {
     "goal": {
       "id": "2",
-      "title": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+      "title": "ຢຸດຕິຄວາມອຶດຫິວ, ບັນລຸຄວາມ ໝັ້ນ ຄົງດ້ານສະບຽງອາຫານແລະປັບປຸງໂພຊະນາການແລະສົ່ງເສີມກະສິ ກຳ ແບບຍືນຍົງ",
       "indicators": [
         
         {
           "id": "2-1-1",
-          "title": "Prevalence of undernourishment",
+          "title": "ອັດຕາສ່ວນຂອງການຂາດສານອາຫານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-1-1",
@@ -127,15 +135,23 @@
         },
         {
           "id": "2-1-2",
-          "title": "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",
+          "title": "ອັດຕາສ່ວນຂອງຄວາມບໍ່ ໝັ້ນ ຄົງດ້ານສະບຽງອາຫານໃນລະດັບປານກາງຫຼືຮ້າຍແຮງໃນປະຊາກອນ, ໂດຍອີງໃສ່ລະດັບປະສົບການດ້ານຄວາມປອດໄພດ້ານອາຫານ (FIES)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-1-2",
           "status": "notstarted"
         },
         {
+          "id": "2-1-4",
+          "title": "ການຜະລິດອາຫານ [2.1.4]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/2-1-4",
+          "status": "complete"
+        },
+        {
           "id": "2-2-1",
-          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
+          "title": "ອັດຕາການແຜ່ກະຈາຍຂອງເດັກນ້ອຍ (ຄວາມສູງ ສຳ ລັບອາຍຸສູງສຸດ -2 ການບ່ຽງເບນມາດຕະຖານຈາກລະດັບປານກາງຂອງມາດຕະຖານການເຕີບໂຕຂອງເດັກນ້ອຍໃນອົງການອະນາໄມໂລກ) ໃນບັນດາເດັກນ້ອຍອາຍຸຕໍ່າກວ່າ 5 ປີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-2-1",
@@ -143,7 +159,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
+          "title": "ອັດຕາການຂາດສານອາຫານ (ນໍ້າ ໜັກ ສຳ ລັບຄວາມສູງ> +2 ຫຼືມາດຕະຖານການບ່ຽງເບນມາດຕະຖານຈາກລະດັບປານກາງຂອງມາດຕະຖານການເຕີບໂຕຂອງເດັກນ້ອຍ WHO ໃນບັນດາເດັກນ້ອຍອາຍຸຕໍ່າກວ່າ 5 ປີ, ຕາມປະເພດ (ການເສຍແລະ ໜັກ ເກີນ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-2-2",
@@ -151,7 +167,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)",
+          "title": "ອັດຕາການເປັນໂຣກເລືອດຈາງໃນແມ່ຍິງອາຍຸ 15 ຫາ 49 ປີ, ໂດຍສະຖານະການຖືພາ (ເປີເຊັນ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-2-3",
@@ -159,7 +175,7 @@
         },
         {
           "id": "2-3-1",
-          "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
+          "title": "ບໍລິມາດການຜະລິດຕໍ່ຫົວ ໜ່ວຍ ແຮງງານໂດຍແບ່ງຕາມຂະ ໜາດ ກະສິ ກຳ / ທົ່ງຫຍ້າລ້ຽງສັດ / ຂະ ໜາດ ວິສາຫະກິດປ່າໄມ້",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-3-1",
@@ -167,7 +183,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Average income of small-scale food producers, by sex and indigenous status",
+          "title": "ລາຍໄດ້ສະເລ່ຍຂອງຜູ້ຜະລິດອາຫານຂະ ໜາດ ນ້ອຍ, ໂດຍເພດແລະຊົນເຜົ່າ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-3-2",
@@ -175,7 +191,7 @@
         },
         {
           "id": "2-4-1",
-          "title": "Proportion of agricultural area under productive and sustainable agriculture",
+          "title": "ອັດຕາສ່ວນເນື້ອທີ່ກະສິ ກຳ ທີ່ຢູ່ພາຍໃຕ້ກະສິ ກຳ ທີ່ມີຜົນຜະລິດແລະຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-4-1",
@@ -183,7 +199,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
+          "title": "ຈຳ ນວນຊັບພະຍາກອນພັນທຸ ກຳ ພືດແລະສັດ ສຳ ລັບອາຫານແລະການກະສິ ກຳ ໄດ້ຮັບປະກັນໃນສະຖານທີ່ອະນຸລັກທັງໄລຍະກາງຫລືໄລຍະຍາວ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-5-1",
@@ -191,7 +207,7 @@
         },
         {
           "id": "2-5-2",
-          "title": "Proportion of local breeds classified as being at risk of extinction",
+          "title": "ສັດສ່ວນຂອງພັນພືດທ້ອງຖິ່ນທີ່ຖືກຈັດປະເພດແມ່ນມີຄວາມສ່ຽງ, ບໍ່ແມ່ນຄວາມສ່ຽງຫຼືໃນລະດັບທີ່ບໍ່ຮູ້ຄວາມສ່ຽງຂອງການສູນພັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-5-2",
@@ -199,7 +215,7 @@
         },
         {
           "id": "2-a-1",
-          "title": "The agriculture orientation index for government expenditures",
+          "title": "ດັດຊະນີຄວາມສອດຄ່ອງດ້ານກະສິ ກຳ ສຳ ລັບລາຍຈ່າຍຂອງລັດຖະບານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-a-1",
@@ -207,7 +223,7 @@
         },
         {
           "id": "2-a-2",
-          "title": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
+          "title": "ກະແສທາງການ (ການຊ່ວຍເຫລືອດ້ານການພັດທະນາບວກກັບກະແສທາງການອື່ນໆ) ເຂົ້າໃນຂະ ແໜງ ກະສິ ກຳ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-a-2",
@@ -215,7 +231,7 @@
         },
         {
           "id": "2-b-1",
-          "title": "Agricultural export subsidies",
+          "title": "ການອຸດ ໜູນ ການສົ່ງອອກກະສິ ກຳ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-b-1",
@@ -223,7 +239,7 @@
         },
         {
           "id": "2-c-1",
-          "title": "Indicator of food price anomalies",
+          "title": "ຕົວຊີ້ວັດຄວາມຜິດປົກກະຕິດ້ານລາຄາອາຫານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/2-c-1",
@@ -234,12 +250,12 @@
   {
     "goal": {
       "id": "3",
-      "title": "Ensure healthy lives and promote well-being for all at all ages",
+      "title": "ຮັບປະກັນຊີວິດສຸຂະພາບແຂງແຮງແລະສົ່ງເສີມສຸຂະພາບທີ່ດີ ສຳ ລັບທຸກໄວ",
       "indicators": [
         
         {
           "id": "3-1-1",
-          "title": "Maternal mortality ratio",
+          "title": "ອັດຕາການຕາຍຂອງແມ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-1-1",
@@ -247,7 +263,7 @@
         },
         {
           "id": "3-1-2",
-          "title": "Proportion of births attended by skilled health personnel",
+          "title": "ອັດຕາສ່ວນການເກີດທີ່ເຂົ້າຮ່ວມໂດຍພະນັກງານແພດທີ່ມີທັກສະ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-1-2",
@@ -255,7 +271,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Under‐5 mortality rate",
+          "title": "ພາຍໃຕ້ອັດຕາການຕາຍ ‐ ຫ້າ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-2-1",
@@ -263,7 +279,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Neonatal mortality rate",
+          "title": "ອັດຕາການຕາຍຂອງເດັກເກີດ ໃໝ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-2-2",
@@ -271,7 +287,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
+          "title": "ຈຳ ນວນຜູ້ຕິດເຊື້ອໂລກເອດສ ໃໝ່ ໃນ ຈຳ ນວນ 1,000 ຄົນທີ່ບໍ່ຕິດເຊື້ອ, ໂດຍເພດ, ອາຍຸແລະປະຊາກອນທີ່ ສຳ ຄັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-3-1",
@@ -279,7 +295,7 @@
         },
         {
           "id": "3-3-2",
-          "title": "Tuberculosis incidence per 100,000 population",
+          "title": "ຈຳ ນວນຄົນເປັນວັນນະໂຣກ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-3-2",
@@ -287,7 +303,7 @@
         },
         {
           "id": "3-3-3",
-          "title": "Malaria incidence per 1,000 population",
+          "title": "ການລະບາດຂອງພະຍາດໄຂ້ຍຸງລາຍຕໍ່ປະຊາກອນ 1,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-3-3",
@@ -295,7 +311,7 @@
         },
         {
           "id": "3-3-4",
-          "title": "Hepatitis B incidence per 100,000 population",
+          "title": "ການເກີດໂຣກຕັບອັກເສບບີຕໍ່ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-3-4",
@@ -303,7 +319,7 @@
         },
         {
           "id": "3-3-5",
-          "title": "Number of people requiring interventions against neglected tropical diseases",
+          "title": "ຈຳ ນວນຄົນທີ່ຕ້ອງການການແຊກແຊງຕ້ານພະຍາດເຂດຮ້ອນທີ່ຖືກລະເລີຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-3-5",
@@ -311,7 +327,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
+          "title": "ອັດຕາການຕາຍແມ່ນຍ້ອນພະຍາດຫຼອດເລືອດຫົວໃຈ, ມະເລັງ, ໂລກເບົາຫວານຫຼືພະຍາດລະບົບຫາຍໃຈຊ້ ຳ ເຮື້ອ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-4-1",
@@ -319,7 +335,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Suicide mortality rate",
+          "title": "ອັດຕາການຕາຍຂອງຕົວເອງຕາຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-4-2",
@@ -327,7 +343,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
+          "title": "ການຄຸ້ມຄອງການແຊກແຊງການປິ່ນປົວ (ການແພດ, ການແພດແລະການຟື້ນຟູສຸຂະພາບແລະການບໍລິການຫລັງການດູແລ) ສຳ ລັບຄວາມຜິດປົກກະຕິໃນການໃຊ້ສານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-5-1",
@@ -335,7 +351,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+          "title": "ການດື່ມເຫຼົ້າທີ່ເປັນອັນຕະລາຍ, ຖືກ ກຳ ນົດໂດຍອີງຕາມສະພາບແຫ່ງຊາດວ່າການບໍລິໂພກເຫຼົ້າຕໍ່ຫົວຄົນ (ອາຍຸ 15 ປີຂຶ້ນໄປ) ພາຍໃນ ໜຶ່ງ ປີຕາມປະຕິທິນໃນລິດເຫຼົ້າບໍລິສຸດລິດ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-5-2",
@@ -343,7 +359,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Death rate due to road traffic injuries",
+          "title": "ອັດຕາການຕາຍຍ້ອນການບາດເຈັບຈາກການສັນຈອນຕາມທ້ອງຖະ ໜົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-6-1",
@@ -351,7 +367,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods",
+          "title": "ສັດສ່ວນຂອງແມ່ຍິງທີ່ມີອາຍຸຈະເລີນພັນ (ອາຍຸ 15-49 ປີ) ຜູ້ທີ່ມີຄວາມຕ້ອງການໃນການວາງແຜນຄອບຄົວພໍໃຈກັບວິທີການທີ່ທັນສະ ໄໝ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-7-1",
@@ -359,7 +375,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group",
+          "title": "ອັດຕາການເກີດຂອງໄວ ໜຸ່ມ (ອາຍຸ 10-14 ປີ; ອາຍຸ 15-19 ປີ) ຕໍ່ແມ່ຍິງ 1,000 ຄົນໃນກຸ່ມອາຍຸນັ້ນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-7-2",
@@ -367,7 +383,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Coverage of essential health services",
+          "title": "ການຄຸ້ມຄອງບໍລິການດ້ານສຸຂະພາບທີ່ ຈຳ ເປັນ (ໝາຍ ເຖິງການຄຸ້ມຄອງໂດຍສະເລ່ຍຂອງການບໍລິການທີ່ ຈຳ ເປັນໂດຍອີງໃສ່ການແຊກແຊງຂອງຄົນເຈັບເຊິ່ງປະກອບມີສຸຂະພາບຈະເລີນພັນ, ແມ່, ເດັກເກີດ ໃໝ່ ແລະເດັກ, ພະຍາດຕິດຕໍ່, ພະຍາດຕິດຕໍ່ທີ່ບໍ່ຕິດຕໍ່ແລະຄວາມສາມາດໃນການບໍລິການແລະການເຂົ້າເຖິງ, ໃນກຸ່ມພົນລະເມືອງທົ່ວໄປແລະຜູ້ດ້ອຍໂອກາດທີ່ສຸດ. )",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-8-1",
@@ -375,7 +391,7 @@
         },
         {
           "id": "3-8-2",
-          "title": "Proportion of population with large household expenditures on health as a share of total household expenditure or income",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ມີການໃຊ້ຈ່າຍໃນຄົວເຮືອນຢ່າງຫຼວງຫຼາຍຕໍ່ສຸຂະພາບເປັນສ່ວນແບ່ງຂອງການໃຊ້ຈ່າຍຂອງຄົວເຮືອນທັງ ໝົດ ຫຼືລາຍໄດ້",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-8-2",
@@ -383,7 +399,7 @@
         },
         {
           "id": "3-9-1",
-          "title": "Mortality rate attributed to household and ambient air pollution",
+          "title": "ອັດຕາການຕາຍຍ້ອນການເກີດມົນລະພິດທາງອາກາດໃນຄົວເຮືອນແລະອາກາດລ້ອມຮອບ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-9-1",
@@ -391,7 +407,7 @@
         },
         {
           "id": "3-9-2",
-          "title": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",
+          "title": "ອັດຕາການຕາຍແມ່ນມາຈາກນ້ ຳ ທີ່ບໍ່ປອດໄພ, ສຸຂະອະນາໄມທີ່ບໍ່ປອດໄພແລະຂາດສຸຂະອະນາໄມ (ປະເຊີນກັບການບໍລິການນ້ ຳ ທີ່ບໍ່ປອດໄພ, ສຸຂາພິບານແລະສຸຂະອະນາໄມ ສຳ ລັບທຸກຄົນ (WASH)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-9-2",
@@ -399,7 +415,7 @@
         },
         {
           "id": "3-9-3",
-          "title": "Mortality rate attributed to unintentional poisoning",
+          "title": "ອັດຕາການຕາຍແມ່ນຍ້ອນການເປັນພິດໂດຍເຈດຕະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-9-3",
@@ -407,7 +423,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
+          "title": "ອັດຕາສ່ວນຂອງການ ນຳ ໃຊ້ຢາສູບໃນປະຈຸບັນໃນກຸ່ມຜູ້ທີ່ມີອາຍຸ 15 ປີຂຶ້ນໄປ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-a-1",
@@ -415,7 +431,7 @@
         },
         {
           "id": "3-b-1",
-          "title": "Proportion of the target population covered by all vaccines included in their national programme",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນເປົ້າ ໝາຍ ທີ່ປົກຄຸມດ້ວຍຢາວັກຊີນທັງ ໝົດ ທີ່ລວມຢູ່ໃນແຜນງານແຫ່ງຊາດຂອງພວກເຂົາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-b-1",
@@ -423,7 +439,7 @@
         },
         {
           "id": "3-b-2",
-          "title": "Total net official development assistance to medical research and basic health sectors",
+          "title": "ການຊ່ວຍເຫຼືອດ້ານການພັດທະນາຢ່າງເປັນທາງການສຸດທິທັງ ໝົດ ຕໍ່ການຄົ້ນຄວ້າທາງການແພດແລະຂະ ແໜງ ສາທາລະນະສຸກຂັ້ນພື້ນຖານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-b-2",
@@ -431,7 +447,7 @@
         },
         {
           "id": "3-b-3",
-          "title": "Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis",
+          "title": "ອັດຕາສ່ວນຂອງສະຖານທີ່ບໍລິການດ້ານສຸຂະພາບທີ່ມີຊຸດ ສຳ ຄັນຂອງຢາທີ່ ຈຳ ເປັນທີ່ກ່ຽວຂ້ອງສາມາດໃຊ້ໄດ້ແລະລາຄາບໍ່ແພງບົນພື້ນຖານທີ່ຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-b-3",
@@ -439,7 +455,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Health worker density and distribution",
+          "title": "ຄວາມ ໜາ ແໜ້ນ ແລະການແຈກຢາຍຂອງພະນັກງານສາທາລະນະສຸກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-c-1",
@@ -447,7 +463,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "International Health Regulations (IHR) capacity and health emergency preparedness",
+          "title": "ຄວາມສາມາດດ້ານກົດລະບຽບສາກົນດ້ານສຸຂະພາບ (IHR) ແລະການກຽມພ້ອມສຸກເສີນດ້ານສຸຂະພາບ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-d-1",
@@ -455,7 +471,7 @@
         },
         {
           "id": "3-d-2",
-          "title": "Percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
+          "title": "ອັດຕາສ່ວນຮ້ອຍຂອງການຕິດເຊື້ອໃນກະແສເລືອດເນື່ອງຈາກວ່າມີສານຕ້ານອະນຸມູນອິດສະຫຼະ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/3-d-2",
@@ -466,12 +482,12 @@
   {
     "goal": {
       "id": "4",
-      "title": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+      "title": "ຮັບປະກັນການສຶກສາທີ່ມີຄຸນນະພາບແບບລວມແລະເທົ່າທຽມກັນແລະສົ່ງເສີມໂອກາດການຮຽນຮູ້ຕະຫຼອດຊີວິດ ສຳ ລັບທຸກຄົນ",
       "indicators": [
         
         {
           "id": "4-1-1",
-          "title": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
+          "title": "ອັດຕາສ່ວນເດັກນ້ອຍແລະຊາວ ໜຸ່ມ (ກ) ໃນຊັ້ນຮຽນ 2/3; (b) ໃນຕອນທ້າຍຂອງປະຖົມ; ແລະ (c) ໃນຕອນທ້າຍຂອງມັດທະຍົມຕອນປາຍທີ່ບັນລຸໄດ້ຢ່າງ ໜ້ອຍ ລະດັບຄວາມສາມາດຕ່ ຳ ສຸດໃນ (i) ການອ່ານແລະ (ii) ຄະນິດສາດ, ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-1-1",
@@ -479,15 +495,23 @@
         },
         {
           "id": "4-1-2",
-          "title": "Completion rate (primary education, lower secondary education, upper secondary education)",
+          "title": "ອັດຕາຄວາມສໍາເລັດ, ໂດຍເພດ, ສະຖານທີ່, ຄວາມຮັ່ງມີ quintile ແລະລະດັບການສຶກສາ (%) [4.1.2]",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-1-2",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "4-1-6",
+          "title": "ເດັກນ້ອຍທີ່ມີອາຍຸເກີນເກນສໍາລັບຄະແນນ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-1-6",
+          "status": "complete"
         },
         {
           "id": "4-2-1",
-          "title": "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex",
+          "title": "ອັດຕາສ່ວນຂອງເດັກນ້ອຍອາຍຸຕ່ ຳ ກວ່າ 5 ປີທີ່ມີການພັດທະນາທາງດ້ານສຸຂະພາບ, ການຮຽນຮູ້ແລະສະຫວັດດີການທາງຈິດໃຈ, ທາງເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-2-1",
@@ -495,23 +519,47 @@
         },
         {
           "id": "4-2-2",
-          "title": "Participation rate in organized learning (one year before the official primary entry age), by sex",
+          "title": "ອັດຕາການມີສ່ວນຮ່ວມໃນການຮຽນຮູ້ທີ່ມີການຈັດຕັ້ງ (ໜຶ່ງ ປີກ່ອນອາຍຸການເຂົ້າຮຽນຂັ້ນຕົ້ນ), ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-2-2",
           "status": "notstarted"
         },
         {
+          "id": "4-2-3",
+          "title": "ອັດຕາການເຂົ້າຮຽນໃນໄວເດັກGross",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-2-3",
+          "status": "complete"
+        },
+        {
           "id": "4-3-1",
-          "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
+          "title": "ອັດຕາການເຂົ້າຮ່ວມຂອງຊາວ ໜຸ່ມ ແລະຜູ້ໃຫຍ່ໃນການສຶກສາແລະການຝຶກອົບຮົມຢ່າງເປັນທາງການແລະບໍ່ເປັນທາງການໃນ 12 ເດືອນຜ່ານມາ, ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-3-1",
           "status": "notstarted"
         },
         {
+          "id": "4-3-3",
+          "title": "ອັດຕາການມີສ່ວນຮ່ວມໃນໂຄງການສຶກສາເຕັກນິກ-ວິຊາຊີບ (ອາຍຸ 15-24 ປີ)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-3-3",
+          "status": "complete"
+        },
+        {
+          "id": "4-3-4",
+          "title": "ເປີເຊັນຊັ້ນມັດທະຍົມຕອນຕົ້ນ/ຊັ້ນມັດທະຍົມຕອນຕົ້ນໄດ້ລົງທະບຽນເຂົ້າຮຽນວິຊາຊີບ &ໂຮງຮຽນຝຶກອົບຮົມ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-3-4",
+          "status": "complete"
+        },
+        {
           "id": "4-4-1",
-          "title": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
+          "title": "ອັດຕາສ່ວນຂອງໄວ ໜຸ່ມ ແລະຜູ້ໃຫຍ່ທີ່ມີທັກສະດ້ານເຕັກໂນໂລຢີຂໍ້ມູນຂ່າວສານແລະການສື່ສານ (ICT), ໂດຍປະເພດທັກສະ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-4-1",
@@ -519,15 +567,31 @@
         },
         {
           "id": "4-5-1",
-          "title": "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated",
+          "title": "ຕົວຊີ້ບອກ Parity (ເພດຍິງ / ເພດຊາຍ, ຊົນນະບົດ / ຕົວເມືອງ, ຊັ້ນລຸ່ມ / quintile ຄວາມຮັ່ງມີແລະອື່ນໆເຊັ່ນ: ສະຖານະພາບຄວາມພິການ, ຄົນພື້ນເມືອງແລະຜູ້ທີ່ໄດ້ຮັບຜົນກະທົບຈາກຂໍ້ຂັດແຍ່ງ, ຍ້ອນວ່າຂໍ້ມູນມີ).",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-5-1",
           "status": "notstarted"
         },
         {
+          "id": "4-5-1-a",
+          "title": "ແຈ້ງການຄວາມເປັນມາຂອງເພດສໍາລັບການລົງທະບຽນgross",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-5-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "4-5-1-b",
+          "title": "ລາຍລະອຽດຄວາມເປັນພາຄີທາງເພດສໍາລັບການສໍາເລັດ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/4-5-1-b",
+          "status": "complete"
+        },
+        {
           "id": "4-6-1",
-          "title": "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງໃນເກນອາຍຸໃດ ໜຶ່ງ ທີ່ບັນລຸຢ່າງ ໜ້ອຍ ໃນລະດັບຄົງທີ່ຂອງທັກສະໃນການເຮັດວຽກ (ກ) ການຮູ້ ໜັງ ສືແລະ (ຂ) ທັກສະດ້ານການຄິດໄລ່ເລກ, ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-6-1",
@@ -535,7 +599,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "ຂອບເຂດທີ່ (i) ການສຶກສາອົບຮົມພົນລະເມືອງທົ່ວໂລກແລະ (ii) ການສຶກສາເພື່ອການພັດທະນາແບບຍືນຍົງ, ລວມທັງຄວາມສະ ເໝີ ພາບລະຫວ່າງຍິງ - ຊາຍແລະສິດທິມະນຸດ, ໄດ້ຖືກ ນຳ ເຂົ້າເປັນຫລັກໃນທຸກລະດັບໃນ (a) ນະໂຍບາຍການສຶກສາແຫ່ງຊາດ; (b) ຫຼັກສູດ; (c) ການສ້າງຄູ; ແລະ (d) ການປະເມີນນັກຮຽນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-7-1",
@@ -543,7 +607,7 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proportion of schools offering basic services, by type of service",
+          "title": "ອັດຕາສ່ວນຂອງໂຮງຮຽນທີ່ມີການເຂົ້າເຖິງ (a) ໄຟຟ້າ; (b) ອິນເຕີເນັດ ສຳ ລັບຈຸດປະສົງສ້າງຄູ; (c) ຄອມພິວເຕີເພື່ອຈຸດປະສົງສ້າງຄູ; (ງ) ປັບປຸງພື້ນຖານໂຄງລ່າງແລະວັດສະດຸ ສຳ ລັບນັກຮຽນພິການ; (e) ນ້ ຳ ດື່ມພື້ນຖານ; (f) ພື້ນຖານດ້ານສຸຂາພິບານຂັ້ນພື້ນຖານຂອງເພດດຽວ; ແລະ (ຊ) ສິ່ງ ອຳ ນວຍຄວາມສະດວກໃນການລ້າງມືຂັ້ນພື້ນຖານ (ຕາມ ຄຳ ນິຍາມຂອງຕົວຊີ້ວັດ WASH)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-a-1",
@@ -551,7 +615,7 @@
         },
         {
           "id": "4-b-1",
-          "title": "Volume of official development assistance flows for scholarships by sector and type of study",
+          "title": "ບໍລິມາດຂອງກະແສການຊ່ວຍເຫຼືອດ້ານການພັດທະນາຢ່າງເປັນທາງການ ສຳ ລັບທຶນການສຶກສາຕາມຂະ ແໜງ ການແລະປະເພດການສຶກສາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-b-1",
@@ -559,7 +623,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proportion of teachers with the minimum required qualifications, by education level",
+          "title": "ອັດຕາສ່ວນຂອງຄູໃນ: (ກ) ກ່ອນປະຖົມສຶກສາ; (b) ປະຖົມ; (c) ມັດທະຍົມຕອນປາຍ; ແລະ (ງ) ການສຶກສາຊັ້ນມັດທະຍົມຕອນປາຍຜູ້ທີ່ໄດ້ຮັບການຝຶກອົບຮົມຄູຢ່າງຕ່ ຳ ທີ່ສຸດ (ຕ. ຢ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/4-c-1",
@@ -570,12 +634,12 @@
   {
     "goal": {
       "id": "5",
-      "title": "Achieve gender equality and empower all women and girls",
+      "title": "ບັນລຸຄວາມສະ ເໝີ ພາບລະຫວ່າງຍິງ - ຊາຍແລະສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ແມ່ຍິງແລະເດັກຍິງທຸກຄົນ",
       "indicators": [
         
         {
           "id": "5-1-1",
-          "title": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex",
+          "title": "ຂອບເຂດກົດ ໝາຍ ມີຢູ່ໃນສະຖານທີ່ໃດເພື່ອສົ່ງເສີມ, ບັງຄັບໃຊ້ແລະຕິດຕາມກວດກາຄວາມສະ ເໝີ ພາບແລະການແບ່ງແຍກທີ່ບໍ່ມີພື້ນຖານທາງເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-1-1",
@@ -583,7 +647,7 @@
         },
         {
           "id": "5-2-1",
-          "title": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງແລະເດັກຍິງທີ່ມີສ່ວນຮ່ວມໃນກຸ່ມອາຍຸ 15 ປີຂຶ້ນໄປແມ່ນຖືກໃຊ້ຄວາມຮຸນແຮງທາງຮ່າງກາຍ, ທາງເພດຫຼືທາງຈິດໃຈໂດຍຄູ່ຮ່ວມງານທີ່ມີຄວາມໃກ້ຊິດໃນປະຈຸບັນຫລືໃນ 12 ເດືອນກ່ອນ, ໂດຍຮູບແບບຄວາມຮຸນແຮງແລະຕາມອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-2-1",
@@ -591,7 +655,7 @@
         },
         {
           "id": "5-2-2",
-          "title": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງແລະເດັກຍິງອາຍຸ 15 ປີຂຶ້ນໄປແມ່ນຖືກໃຊ້ຄວາມຮຸນແຮງທາງເພດໂດຍບຸກຄົນອື່ນນອກ ເໜືອ ຈາກຄູ່ນອນທີ່ສະ ໜິດ ສະ ໜົມ ໃນ 12 ເດືອນຜ່ານມາ, ຕາມອາຍຸແລະສະຖານທີ່ທີ່ເກີດຂື້ນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-2-2",
@@ -599,7 +663,7 @@
         },
         {
           "id": "5-3-1",
-          "title": "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງອາຍຸ 20-24 ປີທີ່ແຕ່ງງານຫລືຢູ່ໃນສະຫະພັນກ່ອນອາຍຸ 15 ປີແລະກ່ອນ 18 ປີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-3-1",
@@ -607,15 +671,23 @@
         },
         {
           "id": "5-3-2",
-          "title": "Proportion of girls and women aged 15–49 years who have undergone female genital mutilation/cutting, by age",
+          "title": "ອັດຕາສ່ວນຂອງເດັກຍິງແລະແມ່ຍິງອາຍຸ 15-49 ປີທີ່ໄດ້ຜ່ານການຕັດອະໄວຍະວະເພດຂອງເພດຍິງ, ຕາມອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-3-2",
           "status": "notstarted"
         },
         {
+          "id": "5-3-4",
+          "title": "ເປີເຊັນຂອງແມ່ຍິງ ທີ່ເກີດລູກກ່ອນອາຍຸ 15 ປີ ແລະ 18 ປີ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/5-3-4",
+          "status": "complete"
+        },
+        {
           "id": "5-4-1",
-          "title": "Proportion of time spent on unpaid domestic and care work, by sex, age and location",
+          "title": "ອັດຕາສ່ວນທີ່ໃຊ້ເວລາໃນການເຮັດວຽກແລະການເບິ່ງແຍງພາຍໃນບ້ານທີ່ບໍ່ໄດ້ຈ່າຍ, ໂດຍເພດ, ອາຍຸແລະສະຖານທີ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-4-1",
@@ -623,7 +695,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Proportion of seats held by women in (a) national parliaments and (b) local governments",
+          "title": "ອັດຕາສ່ວນຂອງບ່ອນນັ່ງໂດຍແມ່ຍິງໃນ (a) ລັດຖະສະພາແຫ່ງຊາດແລະ (b) ລັດຖະບານທ້ອງຖິ່ນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-5-1",
@@ -631,7 +703,7 @@
         },
         {
           "id": "5-5-2",
-          "title": "Proportion of women in managerial positions",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງໃນ ຕຳ ແໜ່ງ ບໍລິຫານງານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-5-2",
@@ -639,7 +711,7 @@
         },
         {
           "id": "5-6-1",
-          "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງອາຍຸ 15–49 ປີທີ່ຕັດສິນໃຈດ້ວຍຕົນເອງກ່ຽວກັບການພົວພັນທາງເພດ, ການ ນຳ ໃຊ້ຄຸມ ກຳ ເນີດແລະການຮັກສາສຸຂະພາບຈະເລີນພັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-6-1",
@@ -647,7 +719,7 @@
         },
         {
           "id": "5-6-2",
-          "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີກົດ ໝາຍ ແລະລະບຽບການທີ່ຮັບປະກັນການເຂົ້າເຖິງຢ່າງເຕັມສ່ວນແລະເທົ່າທຽມກັນ ສຳ ລັບແມ່ຍິງແລະຜູ້ຊາຍອາຍຸ 15 ປີຂຶ້ນໄປໃນການເບິ່ງແຍງສຸຂະພາບທາງເພດແລະການຈະເລີນພັນ, ຂໍ້ມູນຂ່າວສານແລະການສຶກສາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-6-2",
@@ -655,7 +727,7 @@
         },
         {
           "id": "5-a-1",
-          "title": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
+          "title": "(ກ) ອັດຕາສ່ວນຂອງພົນລະເມືອງກະສິ ກຳ ທັງ ໝົດ ທີ່ມີສິດເປັນເຈົ້າຂອງຫຼືສິດທີ່ປອດໄພຕໍ່ທີ່ດິນກະສິ ກຳ, ໂດຍເພດ; ແລະ (ຂ) ແບ່ງປັນຂອງແມ່ຍິງໃນບັນດາເຈົ້າຂອງຫລືຜູ້ຖືສິດທິທີ່ດິນກະສິ ກຳ, ໂດຍແບ່ງຕາມປະເພດຂອງສິດຄອບຄອງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-a-1",
@@ -663,7 +735,7 @@
         },
         {
           "id": "5-a-2",
-          "title": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
+          "title": "ອັດຕາສ່ວນຂອງປະເທດທີ່ກອບກົດ ໝາຍ (ລວມທັງກົດ ໝາຍ ປະເພນີ) ຮັບປະກັນສິດທິເທົ່າທຽມກັນຂອງແມ່ຍິງໃນການເປັນເຈົ້າຂອງທີ່ດິນແລະ / ຫຼືຄວບຄຸມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-a-2",
@@ -671,7 +743,7 @@
         },
         {
           "id": "5-b-1",
-          "title": "Proportion of individuals who own a mobile telephone, by sex",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ທີ່ມີໂທລະສັບມືຖື, ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-b-1",
@@ -679,7 +751,7 @@
         },
         {
           "id": "5-c-1",
-          "title": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment",
+          "title": "ອັດຕາສ່ວນຂອງບັນດາປະເທດທີ່ມີລະບົບເພື່ອຕິດຕາມແລະການຈັດສັນສາທາລະນະເພື່ອຄວາມສະ ເໝີ ພາບລະຫວ່າງຍິງ - ຊາຍແລະການສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ແມ່ຍິງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/5-c-1",
@@ -690,12 +762,12 @@
   {
     "goal": {
       "id": "6",
-      "title": "Ensure availability and sustainable management of water and sanitation for all",
+      "title": "ຮັບປະກັນການມີແລະການຄຸ້ມຄອງນໍ້າແລະສຸຂະອະນາໄມທີ່ຍືນຍົງ ສຳ ລັບທຸກຄົນ",
       "indicators": [
         
         {
           "id": "6-1-1",
-          "title": "Proportion of population using safely managed drinking water services",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນໂດຍ ນຳ ໃຊ້ການບໍລິການນ້ ຳ ດື່ມທີ່ຄຸ້ມຄອງຢ່າງປອດໄພ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-1-1",
@@ -703,7 +775,7 @@
         },
         {
           "id": "6-2-1",
-          "title": "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ໃຊ້ບໍລິການດ້ານສຸຂະອະນາໄມທີ່ຄຸ້ມຄອງຢ່າງປອດໄພ, ລວມທັງສະຖານທີ່ລ້າງມືດ້ວຍສະບູແລະນໍ້າ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-2-1",
@@ -711,7 +783,7 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion of domestic and industrial wastewater flows safely treated",
+          "title": "ອັດຕາສ່ວນຂອງນ້ ຳ ເສຍທີ່ໄດ້ຮັບການຮັກສາຢ່າງປອດໄພ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-3-1",
@@ -719,7 +791,7 @@
         },
         {
           "id": "6-3-2",
-          "title": "Proportion of bodies of water with good ambient water quality",
+          "title": "ອັດຕາສ່ວນຂອງອົງການຈັດຕັ້ງຂອງນ້ ຳ ທີ່ມີຄຸນນະພາບນ້ ຳ ທີ່ມີອາກາດລ້ອມຮອບດີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-3-2",
@@ -727,7 +799,7 @@
         },
         {
           "id": "6-4-1",
-          "title": "Change in water-use efficiency over time",
+          "title": "ປ່ຽນແປງປະສິດທິພາບການ ນຳ ໃຊ້ນ້ ຳ ໃນໄລຍະເວລາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-4-1",
@@ -735,7 +807,7 @@
         },
         {
           "id": "6-4-2",
-          "title": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+          "title": "ລະດັບຂອງຄວາມກົດດັນຂອງນ້ ຳ: ການຖອນນ້ ຳ ຈືດເປັນອັດຕາສ່ວນຂອງຊັບພະຍາກອນນ້ ຳ ຈືດທີ່ມີຢູ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-4-2",
@@ -743,7 +815,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of integrated water resources management",
+          "title": "ລະດັບຂອງການຈັດຕັ້ງປະຕິບັດການຄຸ້ມຄອງຊັບພະຍາກອນນໍ້າ (0 ເຖິງ 100)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-5-1",
@@ -751,7 +823,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
+          "title": "ອັດຕາສ່ວນຂອງພື້ນທີ່ອ່າງຂ້າມຊາຍແດນໂດຍມີການຈັດຕັ້ງປະຕິບັດງານເພື່ອການຮ່ວມມືທາງນໍ້າ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-5-2",
@@ -759,7 +831,7 @@
         },
         {
           "id": "6-6-1",
-          "title": "Change in the extent of water-related ecosystems over time",
+          "title": "ປ່ຽນແປງໃນຂອບເຂດຂອງລະບົບນິເວດທີ່ກ່ຽວຂ້ອງກັບນໍ້າໃນໄລຍະເວລາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-6-1",
@@ -767,7 +839,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan",
+          "title": "ຈຳ ນວນເງິນຊ່ວຍເຫລືອໃນການພັດທະນາທີ່ກ່ຽວຂ້ອງກັບນໍ້າແລະສຸຂະອານາໄມເຊິ່ງເປັນສ່ວນ ໜຶ່ງ ຂອງແຜນການໃຊ້ຈ່າຍທີ່ປະສານສົມທົບກັບລັດຖະບານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-a-1",
@@ -775,7 +847,7 @@
         },
         {
           "id": "6-b-1",
-          "title": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management",
+          "title": "ອັດຕາສ່ວນຂອງບັນດາຫົວ ໜ່ວຍ ບໍລິຫານທ້ອງຖິ່ນທີ່ມີນະໂຍບາຍແລະຂັ້ນຕອນການຈັດຕັ້ງປະຕິບັດແລະການ ດຳ ເນີນງານ ສຳ ລັບການມີສ່ວນຮ່ວມຂອງຊຸມຊົນທ້ອງຖິ່ນໃນການຄຸ້ມຄອງນໍ້າແລະສຸຂະອະນາໄມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/6-b-1",
@@ -786,12 +858,12 @@
   {
     "goal": {
       "id": "7",
-      "title": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+      "title": "ຮັບປະກັນການເຂົ້າເຖິງພະລັງງານທີ່ລາຄາບໍ່ແພງ, ເຊື່ອຖືໄດ້, ຍືນຍົງແລະທັນສະ ໄໝ ສຳ ລັບທຸກຄົນ",
       "indicators": [
         
         {
           "id": "7-1-1",
-          "title": "Proportion of population with access to electricity",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ມີໄຟຟ້າໃຊ້",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-1-1",
@@ -799,7 +871,7 @@
         },
         {
           "id": "7-1-2",
-          "title": "Proportion of population with primary reliance on clean fuels and technology",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນໂດຍອີງໃສ່ຫລັກການ ນຳ ໃຊ້ເຊື້ອໄຟສະອາດແລະເຕັກໂນໂລຢີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-1-2",
@@ -807,7 +879,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Renewable energy share in the total final energy consumption",
+          "title": "ຮຸ້ນພະລັງງານທົດແທນໃນການບໍລິໂພກພະລັງງານສຸດທ້າຍທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-2-1",
@@ -815,7 +887,7 @@
         },
         {
           "id": "7-3-1",
-          "title": "Energy intensity measured in terms of primary energy and GDP",
+          "title": "ຄວາມເຂັ້ມຂອງພະລັງງານວັດແທກໃນແງ່ຂອງພະລັງງານຂັ້ນຕົ້ນແລະ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-3-1",
@@ -823,7 +895,7 @@
         },
         {
           "id": "7-a-1",
-          "title": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",
+          "title": "ກະແສການເງິນສາກົນຕໍ່ປະເທດ ກຳ ລັງພັດທະນາໃນການສະ ໜັບ ສະ ໜູນ ການຄົ້ນຄວ້າແລະພັດທະນາພະລັງງານທີ່ສະອາດແລະການຜະລິດພະລັງງານທົດແທນລວມທັງລະບົບປະສົມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-a-1",
@@ -831,7 +903,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
+          "title": "ການລົງທືນກ່ຽວກັບປະສິດທິພາບດ້ານພະລັງງານເປັນອັດຕາສ່ວນຂອງ GDP ແລະ ຈຳ ນວນເງິນລົງທຶນໂດຍກົງຈາກຕ່າງປະເທດໃນການໂອນເງິນທາງດ້ານການເງິນ ສຳ ລັບພື້ນຖານໂຄງລ່າງແລະເຕັກໂນໂລຢີເຂົ້າໃນການບໍລິການພັດທະນາແບບຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/7-b-1",
@@ -842,12 +914,12 @@
   {
     "goal": {
       "id": "8",
-      "title": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+      "title": "ສົ່ງເສີມການຂະຫຍາຍຕົວທາງດ້ານເສດຖະກິດແບບຍືນຍົງ, ແບບລວມແລະແບບຍືນຍົງ, ການຈ້າງງານເຕັມຮູບແບບແລະການເຮັດວຽກທີ່ ເໝາະ ສົມ ສຳ ລັບທຸກຄົນ",
       "indicators": [
         
         {
           "id": "8-1-1",
-          "title": "Annual growth rate of real GDP per capita",
+          "title": "ອັດຕາການເຕີບໂຕປະ ຈຳ ປີຂອງ GDP ຕົວຈິງຕໍ່ຫົວຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-1-1",
@@ -855,7 +927,7 @@
         },
         {
           "id": "8-2-1",
-          "title": "Annual growth rate of real GDP per employed person",
+          "title": "ອັດຕາການເຕີບໂຕປະ ຈຳ ປີຂອງ GDP ແທ້ຕໍ່ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-2-1",
@@ -863,15 +935,31 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal employment in total employment, by sector and sex",
+          "title": "ອັດຕາສ່ວນຂອງການຈ້າງງານທີ່ບໍ່ເປັນທາງການໃນການຈ້າງງານນອກກະສິ ກຳ, ໂດຍເພດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-3-1",
           "status": "notstarted"
         },
         {
+          "id": "8-3-2",
+          "title": "ເປີເຊັນຂອງການເງິນແລະການກູ້ຢືມທີ່ອອກໃຫ້ SMEs",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "8-3-3",
+          "title": "ຈໍາ ນວນ SME ທີ່ ເປັນ ເຈົ້າ ຂອງ ໂດຍ ພົນ ລະ ເມືອງ ລາວ (ກັບ ປະ ຊາ ຊົນ ລາວ ເປັນ ຜູ້ ຖື ຮຸ້ນ ສ່ວນ ໃຫຍ່)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-3-3",
+          "status": "complete"
+        },
+        {
           "id": "8-4-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
+          "title": "ຮ່ອງຮອຍວັດສະດຸ, ຮ່ອງຮອຍຂອງວັດຖຸຕໍ່ຫົວຄົນ, ແລະຮ່ອງຮອຍທາງດ້ານວັດຖຸຕໍ່ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-4-1",
@@ -879,7 +967,7 @@
         },
         {
           "id": "8-4-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+          "title": "ການບໍລິໂພກດ້ານວັດຖຸ, ການບໍລິໂພກວັດຖຸດິບພາຍໃນປະເທດຕໍ່ຫົວຄົນ, ແລະການບໍລິໂພກວັດຖຸດິບພາຍໃນປະເທດຕໍ່ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-4-2",
@@ -887,7 +975,7 @@
         },
         {
           "id": "8-5-1",
-          "title": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities",
+          "title": "ລາຍໄດ້ຊົ່ວໂມງສະເລ່ຍຂອງພະນັກງານຍິງແລະຊາຍ, ໂດຍອາຊີບ, ອາຍຸແລະຄົນພິການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-5-1",
@@ -895,15 +983,31 @@
         },
         {
           "id": "8-5-2",
-          "title": "Unemployment rate, by sex, age and persons with disabilities",
+          "title": "ອັດຕາການຫວ່າງງານ, ໂດຍເພດ, ອາຍຸແລະຄົນພິການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-5-2",
           "status": "notstarted"
         },
         {
+          "id": "8-5-3",
+          "title": "ທຸລະກິດທີ່ເປັນເຈົ້າຂອງເພດຍິງ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-5-3",
+          "status": "complete"
+        },
+        {
+          "id": "8-5-4",
+          "title": "ສ່ວນແບ່ງຂອງບຸກຄົນທີ່ມີວຽກເຮັດງານທໍາໃນຂະແຫນງການບໍ່ເປັນທາງການ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-5-4",
+          "status": "complete"
+        },
+        {
           "id": "8-6-1",
-          "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
+          "title": "ອັດຕາສ່ວນຂອງໄວ ໜຸ່ມ (ອາຍຸ 15-24 ປີ) ບໍ່ແມ່ນໃນການສຶກສາ, ການຈ້າງງານຫຼືການຝຶກອົບຮົມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-6-1",
@@ -911,15 +1015,23 @@
         },
         {
           "id": "8-7-1",
-          "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
+          "title": "ອັດຕາສ່ວນແລະ ຈຳ ນວນເດັກອາຍຸ 5-17 ປີທີ່ພົວພັນກັບແຮງງານເດັກ, ເພດແລະອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-7-1",
           "status": "notstarted"
         },
         {
+          "id": "8-7-2",
+          "title": "ຈໍານວນເດັກນ້ອຍອາຍຸ 5-17 ປີ ມີສ່ວນຮ່ວມໃນອາຊີບ ແລະ ວຽກງານທີ່ເປັນອັນຕະລາຍທີ່ຫ້າມ, ໂດຍເພດ ແລະ ອາຍຸ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-7-2",
+          "status": "complete"
+        },
+        {
           "id": "8-8-1",
-          "title": "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status",
+          "title": "ອັດຕາຄວາມຖີ່ຂອງການບາດເຈັບທີ່ເປັນແຮງງານແລະບໍ່ແມ່ນຄວາມຕາຍ, ໂດຍເພດແລະສະພາບການອົບພະຍົບ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-8-1",
@@ -927,7 +1039,7 @@
         },
         {
           "id": "8-8-2",
-          "title": "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",
+          "title": "ລະດັບຂອງການປະຕິບັດຕາມລະດັບຊາດກັບສິດທິແຮງງານ (ເສລີພາບໃນການເຂົ້າຮ່ວມແລະການຕໍ່ລອງລວມ ໝູ່) ໂດຍອີງໃສ່ແຫຼ່ງຂໍ້ມູນຕົວ ໜັງ ສືແລະກົດ ໝາຍ ລະຫວ່າງຊາດຂອງອົງການແຮງງານສາກົນ, ໂດຍເພດແລະການຍົກຍ້າຍຖິ່ນຖານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-8-2",
@@ -935,15 +1047,23 @@
         },
         {
           "id": "8-9-1",
-          "title": "Tourism direct GDP as a proportion of total GDP and in growth rate",
+          "title": "ການທ່ອງທ່ຽວໂດຍກົງຂອງ GDP ແມ່ນອັດຕາສ່ວນຂອງ GDP ທັງ ໝົດ ແລະໃນລະດັບເຕີບໂຕ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-9-1",
           "status": "notstarted"
         },
         {
+          "id": "8-9-3",
+          "title": "ການຈັດຕັ້ງປະຕິບັດມາດຕະຖານການທ່ອງທ່ຽວ (1=ເພື່ອຮັບເອົາ ແລະ ຈັດຕັ້ງປະຕິບັດ)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/8-9-3",
+          "status": "complete"
+        },
+        {
           "id": "8-10-1",
-          "title": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults",
+          "title": "(ກ) ຈຳ ນວນສາຂາທະນາຄານທຸລະກິດຕໍ່ຜູ້ໃຫຍ່ 100,000 ຄົນແລະ (ຂ) ຈຳ ນວນເຄື່ອງຈັກອັດຕະໂນມັດ (ຕູ້ ATM) ຕໍ່ຜູ້ໃຫຍ່ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-10-1",
@@ -951,7 +1071,7 @@
         },
         {
           "id": "8-10-2",
-          "title": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ໃຫຍ່ (15 ປີຂຶ້ນໄປ) ທີ່ມີບັນຊີຢູ່ທະນາຄານຫລືສະຖາບັນການເງິນອື່ນໆຫລືກັບຜູ້ໃຫ້ບໍລິການ - ບໍລິການເງິນ - ໃຊ້ມືຖື",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-10-2",
@@ -959,7 +1079,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Aid for Trade commitments and disbursements",
+          "title": "ການຊ່ວຍເຫຼືອ ສຳ ລັບ ຄຳ ໝັ້ນ ສັນຍາທາງດ້ານການຄ້າແລະການເບີກຈ່າຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-a-1",
@@ -967,7 +1087,7 @@
         },
         {
           "id": "8-b-1",
-          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
+          "title": "ທີ່ມີຢູ່ແລ້ວຂອງຍຸດທະສາດແຫ່ງຊາດທີ່ພັດທະນາແລະປະຕິບັດງານ ສຳ ລັບການຈ້າງງານຊາວ ໜຸ່ມ, ເປັນຍຸດທະສາດທີ່ແຕກຕ່າງກັນຫຼືເປັນສ່ວນ ໜຶ່ງ ຂອງຍຸດທະສາດການຈ້າງງານແຫ່ງຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/8-b-1",
@@ -978,12 +1098,12 @@
   {
     "goal": {
       "id": "9",
-      "title": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+      "title": "ກໍ່ສ້າງພື້ນຖານໂຄງລ່າງທີ່ທົນທານ, ສົ່ງເສີມອຸດສະຫະ ກຳ ອຸດສາຫະ ກຳ ແບບລວມແລະແບບຍືນຍົງແລະສົ່ງເສີມການປະດິດສ້າງ",
       "indicators": [
         
         {
           "id": "9-1-1",
-          "title": "Proportion of the rural population who live within 2 km of an all-season road",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນໃນເຂດຊົນນະບົດທີ່ອາໄສຢູ່ພາຍໃນ 2 ກິໂລແມັດຂອງເສັ້ນທາງທັງ ໝົດ ລະດູ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-1-1",
@@ -991,7 +1111,7 @@
         },
         {
           "id": "9-1-2",
-          "title": "Passenger and freight volumes, by mode of transport",
+          "title": "ປະລິມານຜູ້ໂດຍສານແລະຂົນສົ່ງ, ໂດຍຮູບແບບການຂົນສົ່ງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-1-2",
@@ -999,7 +1119,7 @@
         },
         {
           "id": "9-2-1",
-          "title": "Manufacturing value added as a proportion of GDP and per capita",
+          "title": "ມູນຄ່າການຜະລິດເພີ່ມເປັນອັດຕາສ່ວນຂອງ GDP ແລະຫົວຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-2-1",
@@ -1007,7 +1127,7 @@
         },
         {
           "id": "9-2-2",
-          "title": "Manufacturing employment as a proportion of total employment",
+          "title": "ການຜະລິດການຈ້າງງານເປັນອັດຕາສ່ວນຂອງການຈ້າງງານທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-2-2",
@@ -1015,7 +1135,7 @@
         },
         {
           "id": "9-3-1",
-          "title": "Proportion of small-scale industries in total industry value added",
+          "title": "ອັດຕາສ່ວນຂອງອຸດສາຫະ ກຳ ຂະ ໜາດ ນ້ອຍໃນມູນຄ່າອຸດສາຫະ ກຳ ທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-3-1",
@@ -1023,7 +1143,7 @@
         },
         {
           "id": "9-3-2",
-          "title": "Proportion of small-scale industries with a loan or line of credit",
+          "title": "ອັດຕາສ່ວນຂອງອຸດສາຫະ ກຳ ຂະ ໜາດ ນ້ອຍທີ່ມີເງິນກູ້ຫລືສາຍສິນເຊື່ອ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-3-2",
@@ -1031,7 +1151,7 @@
         },
         {
           "id": "9-4-1",
-          "title": "CO2 emission per unit of value added",
+          "title": "ການປ່ອຍອາຍພິດ CO2 ຕໍ່ຫົວ ໜ່ວຍ ຂອງມູນຄ່າເພີ່ມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-4-1",
@@ -1039,7 +1159,7 @@
         },
         {
           "id": "9-5-1",
-          "title": "Research and development expenditure as a proportion of GDP",
+          "title": "ການຄົ້ນຄວ້າແລະການໃຊ້ຈ່າຍໃນການພັດທະນາຕາມອັດຕາສ່ວນຂອງ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-5-1",
@@ -1047,7 +1167,7 @@
         },
         {
           "id": "9-5-2",
-          "title": "Researchers (in full-time equivalent) per million inhabitants",
+          "title": "ນັກຄົ້ນຄວ້າ (ໃນເວລາທຽບເທົ່າເຕັມເວລາ) ຕໍ່ ໜຶ່ງ ລ້ານຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-5-2",
@@ -1055,7 +1175,7 @@
         },
         {
           "id": "9-a-1",
-          "title": "Total official international support (official development assistance plus other official flows) to infrastructure",
+          "title": "ລວມການສະ ໜັບ ສະ ໜູນ ຈາກສາກົນຢ່າງເປັນທາງການ (ການຊ່ວຍເຫຼືອທາງການເພື່ອການພັດທະນາບວກກັບກະແສທາງການອື່ນໆ) ຕໍ່ພື້ນຖານໂຄງລ່າງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-a-1",
@@ -1063,7 +1183,7 @@
         },
         {
           "id": "9-b-1",
-          "title": "Proportion of medium and high-tech industry value added in total value added",
+          "title": "ອັດຕາສ່ວນຂອງມູນຄ່າອຸດສາຫະ ກຳ ເຕັກໂນໂລຢີຂະ ໜາດ ກາງແລະເຕັກໂນໂລຢີສູງເພີ່ມມູນຄ່າລວມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-b-1",
@@ -1071,7 +1191,7 @@
         },
         {
           "id": "9-c-1",
-          "title": "Proportion of population covered by a mobile network, by technology",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ປົກຄຸມດ້ວຍເຄືອຂ່າຍມືຖື, ໂດຍເຕັກໂນໂລຢີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/9-c-1",
@@ -1082,12 +1202,12 @@
   {
     "goal": {
       "id": "10",
-      "title": "Reduce inequality within and among countries",
+      "title": "ຫຼຸດຜ່ອນຄວາມບໍ່ສະ ເໝີ ພາບພາຍໃນແລະລະຫວ່າງບັນດາປະເທດ",
       "indicators": [
         
         {
           "id": "10-1-1",
-          "title": "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population",
+          "title": "ອັດຕາການເຕີບໂຕຂອງການໃຊ້ຈ່າຍຂອງຄົວເຮືອນຫຼືລາຍໄດ້ຕໍ່ຫົວຄົນໃນບັນດາລຸ່ມ 40 ເປີເຊັນຂອງປະຊາກອນແລະປະຊາກອນທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-1-1",
@@ -1095,7 +1215,7 @@
         },
         {
           "id": "10-2-1",
-          "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາຊົນທີ່ມີອາຍຸຕໍ່າກວ່າ 50 ເປີເຊັນຂອງລາຍໄດ້ປານກາງ, ໂດຍເພດ, ອາຍຸແລະຄົນພິການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-2-1",
@@ -1103,7 +1223,7 @@
         },
         {
           "id": "10-3-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ລາຍງານວ່າມີຄວາມຮູ້ສຶກແບ່ງແຍກຫຼືຖືກລົບກວນໃນ 12 ເດືອນຜ່ານມາບົນພື້ນຖານຂອງການ ຈຳ ແນກທີ່ຖືກຫ້າມພາຍໃຕ້ກົດ ໝາຍ ສິດທິມະນຸດສາກົນ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-3-1",
@@ -1111,7 +1231,7 @@
         },
         {
           "id": "10-4-1",
-          "title": "Labour share of GDP",
+          "title": "ສ່ວນແບ່ງແຮງງານຂອງ GDP ລວມມີຄ່າຈ້າງແລະການໂອນເງິນປົກປ້ອງສັງຄົມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-4-1",
@@ -1119,7 +1239,7 @@
         },
         {
           "id": "10-4-2",
-          "title": "Redistributive impact of fiscal policy",
+          "title": "ຜົນກະທົບທີ່ແຈກຢາຍຄືນ ໃໝ່ ຂອງນະໂຍບາຍງົບປະມານ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-4-2",
@@ -1127,7 +1247,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "Financial Soundness Indicators",
+          "title": "ຕົວຊີ້ວັດດ້ານຄວາມແຂງແຮງດ້ານການເງິນ (FSIs)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-5-1",
@@ -1135,7 +1255,7 @@
         },
         {
           "id": "10-6-1",
-          "title": "Proportion of members and voting rights of developing countries in international organizations",
+          "title": "ອັດຕາສ່ວນຂອງສະມາຊິກແລະສິດລົງຄະແນນສຽງຂອງປະເທດພວມພັດທະນາໃນອົງການຈັດຕັ້ງສາກົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-6-1",
@@ -1143,7 +1263,7 @@
         },
         {
           "id": "10-7-1",
-          "title": "Recruitment cost borne by employee as a proportion of monthly income earned in country of destination",
+          "title": "ຄ່າໃຊ້ຈ່າຍໃນການຮັບສະ ໝັກ ພະນັກງານເກີດຈາກອັດຕາສ່ວນຂອງລາຍໄດ້ປະ ຈຳ ປີທີ່ໄດ້ຮັບໃນປະເທດປາຍທາງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-7-1",
@@ -1151,7 +1271,7 @@
         },
         {
           "id": "10-7-2",
-          "title": "Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people",
+          "title": "ຈຳ ນວນປະເທດທີ່ໄດ້ປະຕິບັດນະໂຍບາຍການຍ້າຍຖິ່ນຖານທີ່ຄຸ້ມຄອງໄດ້ດີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-7-2",
@@ -1159,7 +1279,7 @@
         },
         {
           "id": "10-7-3",
-          "title": "Number of people who died or disappeared in the process of migration towards an international destination",
+          "title": "ຈຳ ນວນຄົນທີ່ເສຍຊີວິດຫລືຫາຍຕົວໄປໃນຂະບວນການອົບພະຍົບໄປສູ່ຈຸດ ໝາຍ ປາຍທາງສາກົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-7-3",
@@ -1167,7 +1287,7 @@
         },
         {
           "id": "10-7-4",
-          "title": "Proportion of the population who are refugees, by country of origin",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ເປັນຊາວອົບພະຍົບ, ຕາມປະເທດຕົ້ນທາງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-7-4",
@@ -1175,7 +1295,7 @@
         },
         {
           "id": "10-a-1",
-          "title": "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff",
+          "title": "ອັດຕາສ່ວນອັດຕາພາສີ ນຳ ເຂົ້າຈາກການ ນຳ ເຂົ້າຈາກບັນດາປະເທດທີ່ພັດທະນາ ໜ້ອຍ ແລະປະເທດ ກຳ ລັງພັດທະນາທີ່ມີອັດຕາພາສີສູນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-a-1",
@@ -1183,7 +1303,7 @@
         },
         {
           "id": "10-b-1",
-          "title": "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)",
+          "title": "ກະແສຊັບພະຍາກອນທັງ ໝົດ ເພື່ອການພັດທະນາ, ໂດຍປະເທດຜູ້ຮັບແລະຜູ້ໃຫ້ທຶນແລະປະເພດກະແສ (ເຊັ່ນການຊ່ວຍເຫຼືອທາງການເພື່ອການພັດທະນາ, ການລົງທືນໂດຍກົງຈາກຕ່າງປະເທດແລະກະແສອື່ນໆ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-b-1",
@@ -1191,7 +1311,7 @@
         },
         {
           "id": "10-c-1",
-          "title": "Remittance costs as a proportion of the amount remitted",
+          "title": "ຄ່າໃຊ້ຈ່າຍໃນການໂອນເງິນເປັນອັດຕາສ່ວນຂອງ ຈຳ ນວນທີ່ໄດ້ໂອນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/10-c-1",
@@ -1202,12 +1322,12 @@
   {
     "goal": {
       "id": "11",
-      "title": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+      "title": "ເຮັດໃຫ້ຕົວເມືອງແລະການຕັ້ງຖິ່ນຖານຂອງມະນຸດໃຫ້ລວມ, ປອດໄພ, ທົນທານແລະຍືນຍົງ",
       "indicators": [
         
         {
           "id": "11-1-1",
-          "title": "Proportion of urban population living in slums, informal settlements or inadequate housing",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນໃນຕົວເມືອງທີ່ອາໄສຢູ່ໃນເຂດອ່າວ, ການຕັ້ງຖິ່ນຖານທີ່ບໍ່ເປັນທາງການຫລືທີ່ຢູ່ອາໄສທີ່ບໍ່ພຽງພໍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-1-1",
@@ -1215,7 +1335,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ມີເສັ້ນທາງຄົມມະນາຄົມສາທາລະນະ, ເພດ, ອາຍຸແລະຄົນພິການທີ່ມີຄວາມສະດວກສະບາຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-2-1",
@@ -1223,7 +1343,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "Ratio of land consumption rate to population growth rate",
+          "title": "ອັດຕາສ່ວນການຊົມໃຊ້ທີ່ດິນຕໍ່ອັດຕາການເຕີບໃຫຍ່ຂອງປະຊາກອນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-3-1",
@@ -1231,7 +1351,7 @@
         },
         {
           "id": "11-3-2",
-          "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
+          "title": "ອັດຕາສ່ວນຂອງຕົວເມືອງທີ່ມີໂຄງປະກອບການເຂົ້າຮ່ວມຂອງສັງຄົມພົນລະເຮືອນໂດຍກົງໃນການວາງແຜນແລະຄຸ້ມຄອງຕົວເມືອງທີ່ ດຳ ເນີນງານເປັນປົກກະຕິແລະມີປະຊາທິປະໄຕ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-3-2",
@@ -1239,7 +1359,7 @@
         },
         {
           "id": "11-4-1",
-          "title": "Total per capita expenditure on the preservation, protection and conservation of all cultural and natural heritage, by source of funding (public, private), type of heritage (cultural, natural) and level of government (national, regional, and local/municipal)",
+          "title": "ລາຍຈ່າຍທັງ ໝົດ (ພາກລັດແລະເອກະຊົນ) ຕໍ່ຫົວຄົນໄດ້ໃຊ້ຈ່າຍໃນການປົກປັກຮັກສາແລະອະນຸລັກມໍລະດົກທາງວັດທະນະ ທຳ ແລະ ທຳ ມະຊາດທຸກປະເພດ, ໂດຍປະເພດມໍລະດົກ (ການອອກແບບສູນວັດທະນະ ທຳ, ທຳ ມະຊາດ, ປະສົມແລະມໍລະດົກໂລກ), ລະດັບຂອງລັດຖະບານ (ແຫ່ງຊາດ, ພາກພື້ນແລະທ້ອງຖິ່ນ) / ເທດສະບານ), ປະເພດຂອງລາຍຈ່າຍ (ລາຍຈ່າຍປະຕິບັດງານ / ການລົງທືນ) ແລະປະເພດຂອງເງິນທຶນເອກະຊົນ (ການບໍລິຈາກໃນປະເພດ, ຂະ ແໜງ ການທີ່ບໍ່ຫວັງຜົນ ກຳ ໄລແລະການອຸປະ ຖຳ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-4-1",
@@ -1247,7 +1367,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "ຈຳ ນວນຜູ້ເສຍຊີວິດ, ຜູ້ສູນຫາຍແລະຜູ້ໄດ້ຮັບຜົນກະທົບໂດຍກົງແມ່ນໄພພິບັດຕໍ່ປະຊາກອນ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-5-1",
@@ -1255,23 +1375,15 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters",
+          "title": "ການສູນເສຍທາງດ້ານເສດຖະກິດໂດຍກົງໃນການພົວພັນກັບ GDP ທົ່ວໂລກ, ຄວາມເສຍຫາຍຕໍ່ພື້ນຖານໂຄງລ່າງທີ່ ສຳ ຄັນແລະ ຈຳ ນວນຂອງການລົບກວນການບໍລິການພື້ນຖານ, ແມ່ນຍ້ອນໄພພິບັດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-5-2",
           "status": "notstarted"
         },
         {
-          "id": "11-5-3",
-          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
-          "description": "",
-          "keywords": "",
-          "href": "/sdg-site-laos-demo/11-5-3",
-          "status": "notstarted"
-        },
-        {
           "id": "11-6-1",
-          "title": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
+          "title": "ອັດຕາສ່ວນຂອງຂີ້ເຫຍື້ອໃນຕົວເມືອງທີ່ເກັບ ກຳ ເປັນປົກກະຕິແລະມີການປ່ອຍນ້ ຳ ສຸດທ້າຍທີ່ພຽງພໍຈາກ ຈຳ ນວນຂີ້ເຫຍື້ອໃນຕົວເມືອງທີ່ຜະລິດໂດຍຕົວເມືອງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-6-1",
@@ -1279,7 +1391,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
+          "title": "ລະດັບສະເລ່ຍຂອງປະລິມານສານທີ່ມີສ່ວນປະກອບດີ (ເຊັ່ນ: PM2.5 ແລະ PM10) ໃນຕົວເມືອງ (ປະຊາກອນນ້ ຳ ໜັກ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-6-2",
@@ -1287,7 +1399,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
+          "title": "ສ່ວນແບ່ງສະເລ່ຍຂອງພື້ນທີ່ທີ່ສ້າງຂຶ້ນຂອງຕົວເມືອງທີ່ເປັນບ່ອນເປີດກວ້າງ ສຳ ລັບການ ນຳ ໃຊ້ສາທາລະນະ ສຳ ລັບທຸກຄົນ, ໂດຍເພດ, ອາຍຸແລະຄົນພິການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-7-1",
@@ -1295,7 +1407,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ຖືກເຄາະຮ້າຍຈາກການກໍ່ກວນທາງຮ່າງກາຍຫຼືທາງເພດ, ຕາມເພດ, ອາຍຸ, ສະຖານະພາບຄວາມພິການແລະສະຖານທີ່ທີ່ເກີດຂື້ນ, ໃນ 12 ເດືອນຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-7-2",
@@ -1303,7 +1415,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ອາໄສຢູ່ໃນຕົວເມືອງທີ່ປະຕິບັດແຜນພັດທະນາຕົວເມືອງແລະພາກພື້ນລວມການຄາດຄະເນຂອງພົນລະເມືອງແລະຄວາມຕ້ອງການດ້ານຊັບພະຍາກອນ, ຕາມຂະ ໜາດ ຂອງຕົວເມືອງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-a-1",
@@ -1311,7 +1423,7 @@
         },
         {
           "id": "11-b-1",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "ຈຳ ນວນປະເທດທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດໃຫ້ສອດຄ່ອງກັບຂອບໂຄງການ Sendai ສຳ ລັບການຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດປີ 2015–2030",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-b-1",
@@ -1319,7 +1431,7 @@
         },
         {
           "id": "11-b-2",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "ອັດຕາສ່ວນຂອງລັດຖະບານທ້ອງຖິ່ນທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດໃນທ້ອງຖິ່ນໃຫ້ສອດຄ່ອງກັບຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/11-b-2",
@@ -1330,12 +1442,12 @@
   {
     "goal": {
       "id": "12",
-      "title": "Ensure sustainable consumption and production patterns",
+      "title": "ຮັບປະກັນການ ນຳ ໃຊ້ແລະແບບແຜນການຜະລິດແບບຍືນຍົງ",
       "indicators": [
         
         {
           "id": "12-1-1",
-          "title": "Number of countries developing, adopting or implementing policy instruments aimed at supporting the shift to sustainable consumption and production",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີແຜນກິດຈະ ກຳ ການຜະລິດແລະການຜະລິດແບບຍືນຍົງ (SCP) ຫລືແຜນປະຕິບັດງານແຫ່ງຊາດທີ່ໄດ້ຮັບການບູລິມະສິດເປັນບູລິມະສິດຫຼືເປົ້າ ໝາຍ ໃນນະໂຍບາຍແຫ່ງຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-1-1",
@@ -1343,7 +1455,7 @@
         },
         {
           "id": "12-2-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
+          "title": "ຮ່ອງຮອຍວັດສະດຸ, ຮ່ອງຮອຍຂອງວັດຖຸຕໍ່ຫົວຄົນ, ແລະຮ່ອງຮອຍທາງດ້ານວັດຖຸຕໍ່ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-2-1",
@@ -1351,7 +1463,7 @@
         },
         {
           "id": "12-2-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+          "title": "ການບໍລິໂພກດ້ານວັດຖຸ, ການບໍລິໂພກວັດຖຸດິບພາຍໃນປະເທດຕໍ່ຫົວຄົນ, ແລະການບໍລິໂພກວັດຖຸດິບພາຍໃນປະເທດຕໍ່ GDP",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-2-2",
@@ -1359,7 +1471,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "(a) Food loss index and (b) food waste index",
+          "title": "ດັດຊະນີການສູນເສຍອາຫານທົ່ວໂລກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-3-1",
@@ -1367,7 +1479,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
+          "title": "ຈຳ ນວນຂອງບັນດາສັນຍາກ່ຽວກັບສິ່ງແວດລ້ອມຫຼາຍຝ່າຍສາກົນກ່ຽວກັບສິ່ງເສດເຫຼືອທີ່ເປັນອັນຕະລາຍ, ແລະສານເຄມີອື່ນໆທີ່ຕອບສະ ໜອງ ກັບພັນທະແລະພັນທະໃນການສົ່ງຂໍ້ມູນຕາມທີ່ໄດ້ ກຳ ນົດໄວ້ໃນແຕ່ລະຂໍ້ຕົກລົງທີ່ກ່ຽວຂ້ອງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-4-1",
@@ -1375,7 +1487,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
+          "title": "ສິ່ງເສດເຫຼືອທີ່ເປັນອັນຕະລາຍທີ່ຜະລິດຕໍ່ຫົວຄົນແລະອັດຕາສ່ວນຂອງສິ່ງເສດເຫຼືອທີ່ເປັນອັນຕະລາຍໄດ້ຮັບການປິ່ນປົວ, ຕາມປະເພດຂອງການຮັກສາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-4-2",
@@ -1383,7 +1495,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "National recycling rate, tons of material recycled",
+          "title": "ອັດຕາການ ນຳ ໃຊ້ຄືນ ໃໝ່ ແຫ່ງຊາດ, ວັດສະດຸທີ່ ນຳ ມາຜະລິດຄືນ ໃໝ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-5-1",
@@ -1391,7 +1503,7 @@
         },
         {
           "id": "12-6-1",
-          "title": "Number of companies publishing sustainability reports",
+          "title": "ຈຳ ນວນບໍລິສັດທີ່ເຜີຍແຜ່ບົດລາຍງານຄວາມຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-6-1",
@@ -1399,7 +1511,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Degree of sustainable public procurement policies and action plan implementation",
+          "title": "ຈຳ ນວນປະເທດທີ່ປະຕິບັດນະໂຍບາຍການຈັດຊື້ສາທາລະນະທີ່ຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-7-1",
@@ -1407,7 +1519,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "(ຂ) ການສຶກສາອົບຮົມພົນລະເມືອງທົ່ວໂລກແລະ (ii) ການສຶກສາເພື່ອການພັດທະນາແບບຍືນຍົງ (ລວມທັງການສຶກສາການປ່ຽນແປງດິນຟ້າອາກາດ) ໄດ້ຖືກເຊື່ອມໂຍງເຂົ້າໃນ (ກ) ນະໂຍບາຍການສຶກສາແຫ່ງຊາດ; (b) ຫຼັກສູດ; (c) ການສ້າງຄູ; ແລະ (d) ການປະເມີນນັກຮຽນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-8-1",
@@ -1415,7 +1527,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
+          "title": "ຈຳ ນວນເງິນສະ ໜັບ ສະ ໜູນ ໃຫ້ແກ່ບັນດາປະເທດ ກຳ ລັງພັດທະນາກ່ຽວກັບການຄົ້ນຄວ້າແລະການພັດທະນາເພື່ອການຊົມໃຊ້ແລະການຜະລິດທີ່ຍືນຍົງແລະເຕັກໂນໂລຢີທີ່ເປັນມິດກັບສິ່ງແວດລ້ອມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-a-1",
@@ -1423,7 +1535,7 @@
         },
         {
           "id": "12-b-1",
-          "title": "Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability",
+          "title": "ຈຳ ນວນຍຸດທະສາດຫຼືນະໂຍບາຍການທ່ອງທ່ຽວແບບຍືນຍົງແລະໄດ້ປະຕິບັດແຜນ ດຳ ເນີນງານທີ່ມີເຄື່ອງມືຕິດຕາມແລະປະເມີນຜົນຕົກລົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-b-1",
@@ -1431,7 +1543,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption)",
+          "title": "ຈຳ ນວນເງິນອຸດ ໜູນ ເຊື້ອໄຟຟອດຊິວ ທຳ ຕໍ່ຫົວ ໜ່ວຍ ຜະລິດຕະພັນພາຍໃນຂອງ GDP (ການຜະລິດແລະການຊົມໃຊ້) ແລະເປັນອັດຕາສ່ວນຂອງການໃຊ້ຈ່າຍທົ່ວປະເທດກ່ຽວກັບເຊື້ອໄຟຟອດຊິວ ທຳ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/12-c-1",
@@ -1442,12 +1554,12 @@
   {
     "goal": {
       "id": "13",
-      "title": "Take urgent action to combat climate change and its impacts",
+      "title": "ດຳ ເນີນການຢ່າງຮີບດ່ວນເພື່ອຕ້ານການປ່ຽນແປງດິນຟ້າອາກາດແລະຜົນກະທົບຂອງມັນ",
       "indicators": [
         
         {
           "id": "13-1-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "ຈຳ ນວນຜູ້ເສຍຊີວິດ, ຜູ້ສູນຫາຍແລະຜູ້ໄດ້ຮັບຜົນກະທົບໂດຍກົງແມ່ນໄພພິບັດຕໍ່ປະຊາກອນ 100,000 ຄົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-1-1",
@@ -1455,7 +1567,7 @@
         },
         {
           "id": "13-1-2",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "ຈຳ ນວນປະເທດທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດໃຫ້ສອດຄ່ອງກັບຂອບໂຄງການ Sendai ສຳ ລັບການຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດປີ 2015–2030",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-1-2",
@@ -1463,7 +1575,7 @@
         },
         {
           "id": "13-1-3",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "ອັດຕາສ່ວນຂອງລັດຖະບານທ້ອງຖິ່ນທີ່ຮັບຮອງເອົາແລະປະຕິບັດຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດໃນທ້ອງຖິ່ນໃຫ້ສອດຄ່ອງກັບຍຸດທະສາດຫຼຸດຜ່ອນຄວາມສ່ຽງໄພພິບັດລະດັບຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-1-3",
@@ -1471,7 +1583,7 @@
         },
         {
           "id": "13-2-1",
-          "title": "Number of countries with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
+          "title": "ຈຳ ນວນປະເທດທີ່ໄດ້ສື່ສານກ່ຽວກັບການສ້າງຕັ້ງຫຼືການ ດຳ ເນີນງານຂອງນະໂຍບາຍ / ແຜນຍຸດທະສາດ / ແຜນການທີ່ປະສົມປະສານເຊິ່ງເພີ່ມຄວາມສາມາດໃນການປັບຕົວເຂົ້າກັບຜົນກະທົບທີ່ບໍ່ດີຂອງການປ່ຽນແປງດິນຟ້າອາກາດ, ຜະລິດຕະພັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-2-1",
@@ -1479,7 +1591,7 @@
         },
         {
           "id": "13-2-2",
-          "title": "Total greenhouse gas emissions per year",
+          "title": "ການປ່ອຍອາຍພິດເຮືອນແກ້ວທັງ ໝົດ ຕໍ່ປີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-2-2",
@@ -1487,15 +1599,23 @@
         },
         {
           "id": "13-3-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີການຫຼຸດຜ່ອນ, ການປັບຕົວ, ການຫຼຸດຜ່ອນຜົນກະທົບແລະການເຕືອນໄພລ່ວງ ໜ້າ ເຂົ້າໃນຫຼັກສູດປະຖົມ, ມັດທະຍົມແລະຂັ້ນສາມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-3-1",
           "status": "notstarted"
         },
         {
+          "id": "13-3-3",
+          "title": "ຈໍານວນແຂວງທີ່ມີຄວາມສາມາດໃນການລາຍງານສະພາບການປ່ຽນແປງດິນຟ້າອາກາດ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/13-3-3",
+          "status": "complete"
+        },
+        {
           "id": "13-a-1",
-          "title": "Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025",
+          "title": "ຈຳ ນວນເງິນໂດລາສະຫະລັດຕໍ່ປີໃນລະຫວ່າງປີ 2020 ແລະ 2025 ທີ່ຮັບຜິດຊອບຕໍ່ ຄຳ ໝັ້ນ ສັນຍາທີ່ມີມູນຄ່າ 100 ຕື້ໂດລາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-a-1",
@@ -1503,7 +1623,7 @@
         },
         {
           "id": "13-b-1",
-          "title": "Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",
+          "title": "ຈຳ ນວນປະເທດທີ່ດ້ອຍພັດທະນາແລະເກາະນ້ອຍໆທີ່ ກຳ ລັງພັດທະນາທີ່ ກຳ ລັງໄດ້ຮັບການສະ ໜັບ ສະ ໜູນ ເປັນພິເສດ, ແລະ ຈຳ ນວນເງິນສະ ໜັບ ສະ ໜູນ ລວມທັງການເງິນ, ເຕັກໂນໂລຢີແລະການສ້າງຂີດຄວາມສາມາດ, ສຳ ລັບກົນໄກການຍົກສູງຄວາມສາມາດໃນການວາງແຜນແລະການຄຸ້ມຄອງທີ່ກ່ຽວຂ້ອງກັບການປ່ຽນແປງດິນຟ້າອາກາດທີ່ມີປະສິດຕິຜົນ, ລວມທັງການສຸມໃສ່ແມ່ຍິງ, ຊາວ ໜຸ່ມ ແລະຊຸມຊົນທ້ອງຖິ່ນແລະຊຸມຊົນດ້ອຍໂອກາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/13-b-1",
@@ -1514,12 +1634,12 @@
   {
     "goal": {
       "id": "14",
-      "title": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+      "title": "ອະນຸລັກແລະ ນຳ ໃຊ້ມະຫາສະ ໝຸດ, ທະເລແລະຊັບພະຍາກອນທະເລເພື່ອການພັດທະນາແບບຍືນຍົງ",
       "indicators": [
         
         {
           "id": "14-1-1",
-          "title": "(a) Index of coastal eutrophication; and (b) plastic debris density",
+          "title": "ດັດສະນີກ່ຽວກັບການ ກຳ ຈັດເຂດແຄມທະເລແລະຄວາມ ໜາ ແໜ້ນ ຂອງພາດສະຕິກເລື່ອນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-1-1",
@@ -1527,7 +1647,7 @@
         },
         {
           "id": "14-2-1",
-          "title": "Number of countries using ecosystem-based approaches to managing marine areas",
+          "title": "ອັດຕາສ່ວນຂອງເຂດເສດຖະກິດສະເພາະແຫ່ງຊາດຄຸ້ມຄອງໂດຍ ນຳ ໃຊ້ວິທີການທີ່ອີງໃສ່ລະບົບນິເວດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-2-1",
@@ -1535,7 +1655,7 @@
         },
         {
           "id": "14-3-1",
-          "title": "Average marine acidity (pH) measured at agreed suite of representative sampling stations",
+          "title": "ຄວາມເປັນກົດຂອງນໍ້າທະເລໂດຍສະເລ່ຍ (pH) ຖືກວັດແທກຢູ່ທີ່ສະຖານີຕົວຢ່າງທີ່ໄດ້ຕົກລົງກັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-3-1",
@@ -1543,7 +1663,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks within biologically sustainable levels",
+          "title": "ສັດສ່ວນຂອງການຫາປາພາຍໃນລະດັບທີ່ມີຄວາມຍືນຍົງທາງຊີວະພາບ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-4-1",
@@ -1551,7 +1671,7 @@
         },
         {
           "id": "14-5-1",
-          "title": "Coverage of protected areas in relation to marine areas",
+          "title": "ການຄຸ້ມຄອງປ່າສະຫງວນທີ່ຕິດພັນກັບເຂດທະເລ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-5-1",
@@ -1559,7 +1679,7 @@
         },
         {
           "id": "14-6-1",
-          "title": "Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
+          "title": "ຄວາມຄືບ ໜ້າ ໂດຍບັນດາປະເທດໃນລະດັບຂອງການຈັດຕັ້ງປະຕິບັດເຄື່ອງມືສາກົນແນໃສ່ຕ້ານການຫາປາທີ່ຜິດກົດ ໝາຍ, ບໍ່ໄດ້ລາຍງານແລະບໍ່ມີການຄວບຄຸມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-6-1",
@@ -1567,7 +1687,7 @@
         },
         {
           "id": "14-7-1",
-          "title": "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries",
+          "title": "ການປະມົງແບບຍືນຍົງເປັນອັດຕາສ່ວນຂອງ GDP ໃນບັນດາປະເທດເກາະນ້ອຍໆທີ່ ກຳ ລັງພັດທະນາ, ປະເທດດ້ອຍພັດທະນາແລະທຸກປະເທດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-7-1",
@@ -1575,7 +1695,7 @@
         },
         {
           "id": "14-a-1",
-          "title": "Proportion of total research budget allocated to research in the field of marine technology",
+          "title": "ອັດຕາສ່ວນຂອງງົບປະມານຄົ້ນຄ້ວາທັງ ໝົດ ທີ່ຖືກຈັດສັນໃຫ້ແກ່ການຄົ້ນຄວ້າໃນຂົງເຂດເຕັກໂນໂລຢີທາງທະເລ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-a-1",
@@ -1583,7 +1703,7 @@
         },
         {
           "id": "14-b-1",
-          "title": "Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
+          "title": "ຄວາມຄືບ ໜ້າ ໂດຍປະເທດຕ່າງໆໃນລະດັບການ ນຳ ໃຊ້ກົດ ໝາຍ / ກົດລະບຽບ / ນະໂຍບາຍ / ໂຄງຮ່າງການຈັດຕັ້ງທີ່ຮັບຮູ້ແລະປົກປ້ອງສິດໃນການເຂົ້າເຖິງການປະມົງຂະ ໜາດ ນ້ອຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-b-1",
@@ -1591,7 +1711,7 @@
         },
         {
           "id": "14-c-1",
-          "title": "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີຄວາມກ້າວ ໜ້າ ໃນການໃຫ້ສັດຕະຍາບັນ, ຍອມຮັບແລະຈັດຕັ້ງປະຕິບັດຜ່ານກົດ ໝາຍ, ນະໂຍບາຍແລະສະຖາບັນ, ເຄື່ອງມືທີ່ກ່ຽວຂ້ອງກັບມະຫາສະ ໝຸດ ທີ່ປະຕິບັດກົດ ໝາຍ ສາກົນ, ດັ່ງທີ່ໄດ້ສະແດງອອກໃນສົນທິສັນຍາສະຫະປະຊາຊາດກ່ຽວກັບກົດ ໝາຍ ທະເລ, ເພື່ອການອະນຸລັກແລະ ນຳ ໃຊ້ແບບຍືນຍົງ. ມະຫາສະ ໝຸດ ແລະຊັບພະຍາກອນຂອງເຂົາເຈົ້າ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/14-c-1",
@@ -1602,12 +1722,12 @@
   {
     "goal": {
       "id": "15",
-      "title": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+      "title": "ປົກປັກຮັກສາ, ຟື້ນຟູແລະສົ່ງເສີມການ ນຳ ໃຊ້ລະບົບນິເວດວິທະຍາທາງບົກທີ່ມີຄວາມຍືນຍົງ, ຄຸ້ມຄອງປ່າໄມ້ແບບຍືນຍົງ, ການຕໍ່ສູ້ກັບທະເລຊາຍ, ແລະຢຸດຕິແລະເຮັດໃຫ້ການເຊື່ອມໂຊມຂອງດິນແລະຂັດຂວາງການສູນເສຍຊີວະນາໆພັນ.",
       "indicators": [
         
         {
           "id": "15-1-1",
-          "title": "Forest area as a proportion of total land area",
+          "title": "ເນື້ອທີ່ປ່າໄມ້ເປັນສັດສ່ວນຂອງເນື້ອທີ່ດິນທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-1-1",
@@ -1615,7 +1735,7 @@
         },
         {
           "id": "15-1-2",
-          "title": "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type",
+          "title": "ສັດສ່ວນຂອງສະຖານທີ່ທີ່ ສຳ ຄັນ ສຳ ລັບຊີວະນາໆພັນທາງບົກແລະນ້ ຳ ຈືດທີ່ຖືກປົກຄຸມໄປດ້ວຍເຂດປ່າສະຫງວນ, ຕາມປະເພດລະບົບນິເວດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-1-2",
@@ -1623,7 +1743,7 @@
         },
         {
           "id": "15-2-1",
-          "title": "Progress towards sustainable forest management",
+          "title": "ຄວາມກ້າວ ໜ້າ ໄປສູ່ການຄຸ້ມຄອງປ່າໄມ້ແບບຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-2-1",
@@ -1631,7 +1751,7 @@
         },
         {
           "id": "15-3-1",
-          "title": "Proportion of land that is degraded over total land area",
+          "title": "ອັດຕາສ່ວນຂອງເນື້ອທີ່ດິນທີ່ເສື່ອມໂຊມໃນເນື້ອທີ່ດິນທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-3-1",
@@ -1639,7 +1759,7 @@
         },
         {
           "id": "15-4-1",
-          "title": "Coverage by protected areas of important sites for mountain biodiversity",
+          "title": "ປົກຄຸມດ້ວຍພື້ນທີ່ປ້ອງກັນຂອງສະຖານທີ່ ສຳ ຄັນ ສຳ ລັບຊີວະນາໆພັນພູເຂົາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-4-1",
@@ -1647,7 +1767,7 @@
         },
         {
           "id": "15-4-2",
-          "title": "Mountain Green Cover Index",
+          "title": "ດັດຊະນີພູສີຂຽວ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-4-2",
@@ -1655,7 +1775,7 @@
         },
         {
           "id": "15-5-1",
-          "title": "Red List Index",
+          "title": "ດັດຊະນີບັນຊີແດງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-5-1",
@@ -1663,7 +1783,7 @@
         },
         {
           "id": "15-6-1",
-          "title": "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",
+          "title": "ຈຳ ນວນປະເທດທີ່ໄດ້ຮັບຮອງເອົາກົດ ໝາຍ, ການບໍລິຫານແລະນະໂຍບາຍເພື່ອຮັບປະກັນການແບ່ງປັນຜົນປະໂຫຍດທີ່ຍຸດຕິ ທຳ ແລະສະ ເໝີ ພາບ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-6-1",
@@ -1671,7 +1791,7 @@
         },
         {
           "id": "15-7-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
+          "title": "ສັດສ່ວນສັດປ່າທີ່ຖືກຄ້າຂາຍທີ່ຖືກລ່າສັດຫຼືຄ້າຂາຍຜິດກົດ ໝາຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-7-1",
@@ -1679,7 +1799,7 @@
         },
         {
           "id": "15-8-1",
-          "title": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
+          "title": "ສັດສ່ວນຂອງບັນດາປະເທດທີ່ຮັບຮອງເອົານິຕິ ກຳ ແຫ່ງຊາດທີ່ກ່ຽວຂ້ອງແລະມີປະໂຫຍດຢ່າງພຽງພໍໃນການປ້ອງກັນຫຼືຄວບຄຸມຊະນິດພັນຕ່າງດາວທີ່ມີການບຸກລຸກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-8-1",
@@ -1687,7 +1807,7 @@
         },
         {
           "id": "15-9-1",
-          "title": "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets; and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accounting",
+          "title": "ຄວາມຄືບ ໜ້າ ໄປສູ່ເປົ້າ ໝາຍ ແຫ່ງຊາດທີ່ຖືກສ້າງຕັ້ງຂື້ນໂດຍສອດຄ່ອງກັບເປົ້າ ໝາຍ ຊີວະນາໆພັນ Aichi 2 ຂອງແຜນຍຸດທະສາດກ່ຽວກັບຊີວະນາໆພັນ 2011-2020",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-9-1",
@@ -1695,7 +1815,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
+          "title": "ການຊ່ວຍເຫຼືອດ້ານການພັດທະນາຢ່າງເປັນທາງການແລະການໃຊ້ຈ່າຍຂອງລັດໃນການອະນຸລັກແລະ ນຳ ໃຊ້ຊີວະນາໆພັນແລະລະບົບນິເວດວິທະຍາຢ່າງຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-a-1",
@@ -1703,7 +1823,7 @@
         },
         {
           "id": "15-b-1",
-          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
+          "title": "ການຊ່ວຍເຫຼືອດ້ານການພັດທະນາຢ່າງເປັນທາງການແລະການໃຊ້ຈ່າຍຂອງລັດໃນການອະນຸລັກແລະ ນຳ ໃຊ້ຊີວະນາໆພັນແລະລະບົບນິເວດວິທະຍາຢ່າງຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-b-1",
@@ -1711,7 +1831,7 @@
         },
         {
           "id": "15-c-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
+          "title": "ສັດສ່ວນສັດປ່າທີ່ຖືກຄ້າຂາຍທີ່ຖືກລ່າສັດຫຼືຄ້າຂາຍຜິດກົດ ໝາຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/15-c-1",
@@ -1722,12 +1842,12 @@
   {
     "goal": {
       "id": "16",
-      "title": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+      "title": "ສົ່ງເສີມໃຫ້ສັງຄົມມີຄວາມສະຫງົບສຸກແລະມີສ່ວນຮ່ວມເພື່ອການພັດທະນາແບບຍືນຍົງ, ໃຫ້ການເຂົ້າເຖິງຄວາມຍຸດຕິ ທຳ ສຳ ລັບທຸກຄົນແລະສ້າງສະຖາບັນທີ່ມີປະສິດຕິພາບ, ມີຄວາມຮັບຜິດຊອບແລະມີສ່ວນຮ່ວມໃນທຸກລະດັບ",
       "indicators": [
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
+          "title": "ຈຳ ນວນຜູ້ຖືກເຄາະຮ້າຍຈາກການຄາດຕະ ກຳ ໂດຍເຈດຕະນາຕໍ່ 100,000 ຄົນ, ໂດຍເພດແລະອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-1-1",
@@ -1735,7 +1855,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
+          "title": "ການເສຍຊີວິດທີ່ກ່ຽວຂ້ອງກັບຂໍ້ຂັດແຍ່ງຕໍ່ປະຊາກອນ 100,000, ໂດຍເພດ, ອາຍຸແລະສາເຫດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-1-2",
@@ -1743,7 +1863,7 @@
         },
         {
           "id": "16-1-3",
-          "title": "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months",
+          "title": "ອັດຕາສ່ວນຂອງພົນລະເມືອງທີ່ປະເຊີນກັບ (a) ຄວາມຮຸນແຮງທາງຮ່າງກາຍ, (ຂ) ຄວາມຮຸນແຮງທາງຈິດໃຈແລະ (c) ຄວາມຮຸນແຮງທາງເພດໃນ 12 ເດືອນທີ່ຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-1-3",
@@ -1751,7 +1871,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ຮູ້ສຶກວ່າມີຄວາມປອດໄພໃນການຍ່າງຢູ່ຄົນດຽວອ້ອມຮອບພື້ນທີ່ທີ່ພວກເຂົາອາໄສຢູ່",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-1-4",
@@ -1759,7 +1879,7 @@
         },
         {
           "id": "16-2-1",
-          "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
+          "title": "ອັດຕາສ່ວນຂອງເດັກອາຍຸ 1-17 ປີທີ່ປະສົບກັບການລົງໂທດທາງຮ່າງກາຍແລະ / ຫຼືການຮຸກຮານທາງຈິດໃຈໂດຍຜູ້ເບິ່ງແຍງໃນເດືອນທີ່ຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-2-1",
@@ -1767,7 +1887,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
+          "title": "ຈຳ ນວນຜູ້ຖືກເຄາະຮ້າຍຈາກການຄ້າມະນຸດຕໍ່ 100,000 ຄົນ, ໂດຍເພດ, ອາຍຸແລະຮູບແບບການຂູດຮີດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-2-2",
@@ -1775,7 +1895,7 @@
         },
         {
           "id": "16-2-3",
-          "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
+          "title": "ອັດຕາສ່ວນຂອງແມ່ຍິງ ໜຸ່ມ ແລະຜູ້ຊາຍອາຍຸ 18-29 ປີທີ່ປະສົບກັບຄວາມຮຸນແຮງທາງເພດເມື່ອຮອດອາຍຸ 18 ປີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-2-3",
@@ -1783,7 +1903,7 @@
         },
         {
           "id": "16-3-1",
-          "title": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ຖືກເຄາະຮ້າຍຈາກຄວາມຮຸນແຮງໃນ 12 ເດືອນທີ່ຜ່ານມາຜູ້ທີ່ໄດ້ລາຍງານຜູ້ຖືກເຄາະຮ້າຍຂອງຕົນຕໍ່ເຈົ້າ ໜ້າ ທີ່ທີ່ມີຄວາມສາມາດຫຼືກົນໄກການແກ້ໄຂຂໍ້ຂັດແຍ່ງອື່ນໆທີ່ຖືກຮັບຮູ້ຢ່າງເປັນທາງການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-3-1",
@@ -1791,7 +1911,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Unsentenced detainees as a proportion of overall prison population",
+          "title": "ຜູ້ຖືກຄຸມຂັງທີ່ບໍ່ໄດ້ຮັບການຮັກສາເປັນອັດຕາສ່ວນຂອງ ຈຳ ນວນພົນລະເມືອງໃນຄຸກທົ່ວໄປ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-3-2",
@@ -1799,7 +1919,7 @@
         },
         {
           "id": "16-3-3",
-          "title": "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນຜູ້ທີ່ປະສົບຂໍ້ຂັດແຍ່ງໃນສອງປີທີ່ຜ່ານມາແລະຜູ້ທີ່ເຂົ້າເຖິງກົນໄກການແກ້ໄຂຂໍ້ຂັດແຍ່ງທາງການຫຼືບໍ່ເປັນທາງການ, ໂດຍປະເພດກົນໄກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-3-3",
@@ -1807,7 +1927,7 @@
         },
         {
           "id": "16-4-1",
-          "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
+          "title": "ມູນຄ່າທັງ ໝົດ ຂອງກະແສການເງິນທີ່ບໍ່ຖືກຕ້ອງພາຍໃນແລະພາຍນອກ (ເປັນເງິນໂດລາສະຫະລັດປະຈຸບັນ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-4-1",
@@ -1815,7 +1935,7 @@
         },
         {
           "id": "16-4-2",
-          "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
+          "title": "ອັດຕາສ່ວນຂອງອາວຸດທີ່ຖືກຍຶດ, ພົບເຫັນຫລືຍອມ ຈຳ ນົນທີ່ມີຕົ້ນ ກຳ ເນີດຫລືສະພາບການທີ່ບໍ່ຖືກຕ້ອງຕາມກົດ ໝາຍ ໄດ້ຖືກຕິດຕາມຫລືສ້າງຕັ້ງຂື້ນໂດຍເຈົ້າ ໜ້າ ທີ່ທີ່ມີຄວາມສາມາດສອດຄ່ອງກັບເຄື່ອງມືສາກົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-4-2",
@@ -1823,7 +1943,7 @@
         },
         {
           "id": "16-5-1",
-          "title": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ທີ່ມີການພົວພັນກັບເຈົ້າ ໜ້າ ທີ່ສາທາລະນະຢ່າງ ໜ້ອຍ ໜຶ່ງ ຄັ້ງແລະຜູ້ທີ່ຈ່າຍເງິນສິນບົນໃຫ້ເຈົ້າ ໜ້າ ທີ່ສາທາລະນະ, ຫຼືຖືກຂໍໃຫ້ຮັບສິນບົນຈາກເຈົ້າ ໜ້າ ທີ່ສາທາລະນະເຫຼົ່ານັ້ນ, ໃນໄລຍະ 12 ເດືອນທີ່ຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-5-1",
@@ -1831,7 +1951,7 @@
         },
         {
           "id": "16-5-2",
-          "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
+          "title": "ອັດຕາສ່ວນຂອງທຸລະກິດທີ່ມີການຕິດຕໍ່ຢ່າງ ໜ້ອຍ ໜຶ່ງ ຄັ້ງກັບເຈົ້າ ໜ້າ ທີ່ລັດແລະການຈ່າຍເງິນໃຫ້ເຈົ້າ ໜ້າ ທີ່ສາທາລະນະ, ຫຼືຖືກຮຽກຮ້ອງໃຫ້ມີການໃຫ້ສິນບົນຈາກເຈົ້າ ໜ້າ ທີ່ລັດໃນໄລຍະ 12 ເດືອນທີ່ຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-5-2",
@@ -1839,7 +1959,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
+          "title": "ການໃຊ້ຈ່າຍຂອງລັດຖະບານຂັ້ນຕົ້ນເປັນອັດຕາສ່ວນຂອງງົບປະມານທີ່ໄດ້ຮັບການອະນຸມັດຂັ້ນຕົ້ນ, ຕາມຂະ ແໜງ ການ (ຫລືໂດຍລະຫັດງົບປະມານຫລືຄ້າຍຄືກັນ)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-6-1",
@@ -1847,7 +1967,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Proportion of population satisfied with their last experience of public services",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນພໍໃຈກັບປະສົບການສຸດທ້າຍຂອງການບໍລິການສາທາລະນະ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-6-2",
@@ -1855,7 +1975,7 @@
         },
         {
           "id": "16-7-1",
-          "title": "Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups",
+          "title": "ອັດຕາສ່ວນຂອງ ຕຳ ແໜ່ງ (ໂດຍເພດ, ອາຍຸ, ຄົນພິການແລະກຸ່ມປະຊາກອນ) ໃນສະຖາບັນສາທາລະນະ (ນິຕິ ກຳ ແຫ່ງຊາດແລະທ້ອງຖິ່ນ, ການບໍລິການສາທາລະນະແລະຕຸລາການ) ທຽບໃສ່ການແຈກຢາຍລະດັບຊາດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-7-1",
@@ -1863,7 +1983,7 @@
         },
         {
           "id": "16-7-2",
-          "title": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນຜູ້ທີ່ເຊື່ອໃນການຕັດສິນໃຈແມ່ນລວມແລະຕອບສະ ໜອງ, ໂດຍເພດ, ອາຍຸ, ຄວາມພິການແລະກຸ່ມປະຊາກອນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-7-2",
@@ -1871,7 +1991,7 @@
         },
         {
           "id": "16-8-1",
-          "title": "Proportion of members and voting rights of developing countries in international organizations",
+          "title": "ອັດຕາສ່ວນຂອງສະມາຊິກແລະສິດລົງຄະແນນສຽງຂອງປະເທດພວມພັດທະນາໃນອົງການຈັດຕັ້ງສາກົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-8-1",
@@ -1879,7 +1999,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
+          "title": "ອັດຕາສ່ວນຂອງເດັກອາຍຸຕ່ ຳ ກວ່າ 5 ປີເຊິ່ງການເກີດຂອງພວກເຂົາໄດ້ຖືກຈົດທະບຽນກັບເຈົ້າ ໜ້າ ທີ່ພົນລະເຮືອນ, ຕາມອາຍຸ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-9-1",
@@ -1887,7 +2007,7 @@
         },
         {
           "id": "16-10-1",
-          "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
+          "title": "ຈຳ ນວນຄະດີທີ່ໄດ້ຮັບການຢັ້ງຢືນກ່ຽວກັບການຂ້າ, ລັກພາຕົວ, ການຫາຍຕົວໄປແບບບັງຄັບ, ການກັກຂັງຢ່າງຜິດກົດ ໝາຍ ແລະການທໍລະມານນັກຂ່າວ, ພະນັກງານສື່ມວນຊົນທີ່ກ່ຽວຂ້ອງ, ສະຫະພັນການຄ້າແລະຜູ້ສະ ໜັບ ສະ ໜູນ ສິດທິມະນຸດໃນ 12 ເດືອນຜ່ານມາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-10-1",
@@ -1895,7 +2015,7 @@
         },
         {
           "id": "16-10-2",
-          "title": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
+          "title": "ຈຳ ນວນປະເທດທີ່ຮັບຮອງເອົາແລະປະຕິບັດລັດຖະ ທຳ ມະນູນ, ກົດ ໝາຍ ແລະ / ຫຼືການຮັບປະກັນດ້ານນະໂຍບາຍ ສຳ ລັບການເຂົ້າເຖິງຂໍ້ມູນຂ່າວສານຂອງປະຊາຊົນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-10-2",
@@ -1903,7 +2023,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
+          "title": "ທີ່ມີຢູ່ແລ້ວຂອງສະຖາບັນສິດທິມະນຸດແຫ່ງຊາດທີ່ເປັນເອກະລາດໃນການປະຕິບັດຕາມຫຼັກການປາຣີ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-a-1",
@@ -1911,7 +2031,7 @@
         },
         {
           "id": "16-b-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "title": "ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ລາຍງານວ່າມີຄວາມຮູ້ສຶກແບ່ງແຍກຫຼືຖືກລົບກວນໃນ 12 ເດືອນຜ່ານມາບົນພື້ນຖານຂອງການ ຈຳ ແນກທີ່ຖືກຫ້າມພາຍໃຕ້ກົດ ໝາຍ ສິດທິມະນຸດສາກົນ.",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/16-b-1",
@@ -1922,12 +2042,12 @@
   {
     "goal": {
       "id": "17",
-      "title": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+      "title": "ສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ວິທີການຈັດຕັ້ງປະຕິບັດແລະຟື້ນຟູຄູ່ຮ່ວມມືໂລກເພື່ອການພັດທະນາແບບຍືນຍົງ",
       "indicators": [
         
         {
           "id": "17-1-1",
-          "title": "Total government revenue as a proportion of GDP, by source",
+          "title": "ລາຍໄດ້ທັງ ໝົດ ຂອງລັດຖະບານເປັນສັດສ່ວນຂອງ GDP, ຕາມແຫຼ່ງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-1-1",
@@ -1935,7 +2055,7 @@
         },
         {
           "id": "17-1-2",
-          "title": "Proportion of domestic budget funded by domestic taxes",
+          "title": "ອັດຕາສ່ວນຂອງງົບປະມານພາຍໃນທີ່ໄດ້ຮັບການສະ ໜັບ ສະ ໜູນ ຈາກພາສີພາຍໃນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-1-2",
@@ -1943,7 +2063,7 @@
         },
         {
           "id": "17-2-1",
-          "title": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
+          "title": "ການຊ່ວຍເຫລືອດ້ານການພັດທະນາຢ່າງເປັນທາງການສຸດທິ, ລວມທັງປະເທດທີ່ດ້ອຍພັດທະນາ, ເປັນອັດຕາສ່ວນຂອງຄະນະ ກຳ ມາທິການເພື່ອການພັດທະນາເພື່ອການພັດທະນາ (OECD)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-2-1",
@@ -1951,7 +2071,7 @@
         },
         {
           "id": "17-3-1",
-          "title": "Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income",
+          "title": "ການລົງທືນໂດຍກົງຈາກຕ່າງປະເທດ (FDI), ການຊ່ວຍເຫລືອດ້ານການພັດທະນາຢ່າງເປັນທາງການແລະການຮ່ວມມືໃຕ້ - ໃຕ້ເປັນອັດຕາສ່ວນຂອງງົບປະມານພາຍໃນທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-3-1",
@@ -1959,7 +2079,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+          "title": "ປະລິມານການໂອນເງິນ (ເປັນເງິນໂດລາສະຫະລັດ) ເປັນອັດຕາສ່ວນຂອງ GDP ທັງ ໝົດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-3-2",
@@ -1967,7 +2087,7 @@
         },
         {
           "id": "17-4-1",
-          "title": "Debt service as a proportion of exports of goods and services",
+          "title": "ການບໍລິການ ໜີ້ ສິນເປັນອັດຕາສ່ວນຂອງການສົ່ງອອກສິນຄ້າແລະການບໍລິການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-4-1",
@@ -1975,7 +2095,7 @@
         },
         {
           "id": "17-5-1",
-          "title": "Number of countries that adopt and implement investment promotion regimes for developing countries, including the least developed countries",
+          "title": "ຈຳ ນວນປະເທດທີ່ຮັບຮອງເອົາແລະປະຕິບັດລະບອບການສົ່ງເສີມການລົງທຶນ ສຳ ລັບປະເທດທີ່ດ້ອຍພັດທະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-5-1",
@@ -1983,7 +2103,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
+          "title": "ຈຳ ນວນຂໍ້ຕົກລົງການຮ່ວມມືດ້ານວິທະຍາສາດແລະ / ຫຼືເຕັກໂນໂລຢີລະຫວ່າງປະເທດ, ໂດຍປະເພດການຮ່ວມມື",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-6-1",
@@ -1991,7 +2111,7 @@
         },
         {
           "id": "17-7-1",
-          "title": "Total amount of funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
+          "title": "ຈຳ ນວນເງິນທັງ ໝົດ ທີ່ໄດ້ຮັບການອະນຸມັດ ສຳ ລັບບັນດາປະເທດ ກຳ ລັງພັດທະນາເພື່ອສົ່ງເສີມການພັດທະນາ, ຖ່າຍທອດ, ເຜີຍແຜ່ແລະການແຜ່ກະຈາຍຂອງເຕັກໂນໂລຢີທີ່ເປັນມິດກັບສິ່ງແວດລ້ອມ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-7-1",
@@ -1999,15 +2119,31 @@
         },
         {
           "id": "17-8-1",
-          "title": "Proportion of individuals using the Internet",
+          "title": "ອັດຕາສ່ວນຂອງບຸກຄົນທີ່ ນຳ ໃຊ້ອິນເຕີເນັດ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-8-1",
           "status": "notstarted"
         },
         {
+          "id": "17-8-2",
+          "title": "ເປີເຊັນຂອງປະຊາກອນທີ່ຈົດທະບຽນເປັນຜູ້ໃຊ້ອິນເຕີເນັດໂດຍຜ່ານສາຍດິນແລະໄຮ້ສາຍ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/17-8-2",
+          "status": "complete"
+        },
+        {
+          "id": "17-8-3",
+          "title": "ເປີເຊັນຂອງຜູ້ໃຊ້ໂທລະສັບມືຖືທີ່ມີອິນເຕີເນັດ.",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/17-8-3",
+          "status": "complete"
+        },
+        {
           "id": "17-9-1",
-          "title": "Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries",
+          "title": "ມູນຄ່າເງິນໂດລາຂອງການຊ່ວຍເຫຼືອທາງດ້ານການເງິນແລະເຕັກນິກ (ລວມທັງການຮ່ວມມື ເໜືອ - ໃຕ້, ໃຕ້ - ໃຕ້ແລະສາມຫລ່ຽມ) ທີ່ມີຕໍ່ປະເທດ ກຳ ລັງພັດທະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-9-1",
@@ -2015,7 +2151,7 @@
         },
         {
           "id": "17-10-1",
-          "title": "Worldwide weighted tariff-average",
+          "title": "ອັດຕາພາສີ ນຳ ເຂົ້າທົ່ວໂລກໂດຍສະເລ່ຍ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-10-1",
@@ -2023,7 +2159,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "Developing countries’ and least developed countries’ share of global exports",
+          "title": "ສ່ວນປະເທດ ກຳ ລັງພັດທະນາແລະສ່ວນ ໜ້ອຍ ຂອງປະເທດທີ່ພັດທະນາແລ້ວໃນການສົ່ງອອກທົ່ວໂລກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-11-1",
@@ -2031,7 +2167,7 @@
         },
         {
           "id": "17-12-1",
-          "title": "Weighted average tariffs faced by developing countries, least developed countries and small island developing States",
+          "title": "ອັດຕາພາສີສະເລ່ຍທີ່ປະເທດ ກຳ ລັງພັດທະນາ, ປະເທດດ້ອຍພັດທະນາແລະປະເທດເກາະນ້ອຍໆ ກຳ ລັງພັດທະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-12-1",
@@ -2039,7 +2175,7 @@
         },
         {
           "id": "17-13-1",
-          "title": "Macroeconomic Dashboard",
+          "title": "ແຜງຄວບຄຸມເສດຖະກິດມະຫາພາກ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-13-1",
@@ -2047,7 +2183,7 @@
         },
         {
           "id": "17-14-1",
-          "title": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
+          "title": "ຈຳ ນວນບັນດາປະເທດທີ່ມີກົນໄກເພື່ອປະຕິບັດນະໂຍບາຍການພັດທະນາແບບຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-14-1",
@@ -2055,7 +2191,7 @@
         },
         {
           "id": "17-15-1",
-          "title": "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation",
+          "title": "ການ ນຳ ໃຊ້ຂອບເຂດຜົນໄດ້ຮັບທີ່ເປັນເຈົ້າຂອງປະເທດແລະເຄື່ອງມືການວາງແຜນໂດຍຜູ້ໃຫ້ການຮ່ວມມືດ້ານການພັດທະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-15-1",
@@ -2063,7 +2199,7 @@
         },
         {
           "id": "17-16-1",
-          "title": "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals",
+          "title": "ຈຳ ນວນປະເທດທີ່ລາຍງານຄວາມຄືບ ໜ້າ ໃນກອບການຕິດຕາມກວດກາປະສິດທິຜົນຂອງການພັດທະນາຫລາຍພາກສ່ວນທີ່ກ່ຽວຂ້ອງທີ່ສະ ໜັບ ສະ ໜູນ ການບັນລຸເປົ້າ ໝາຍ ການພັດທະນາແບບຍືນຍົງ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-16-1",
@@ -2071,7 +2207,7 @@
         },
         {
           "id": "17-17-1",
-          "title": "Amount in United States dollars committed to public-private partnerships for infrastructure",
+          "title": "ຈຳ ນວນເງິນໂດລາສະຫະລັດທີ່ມີຄວາມຕັ້ງໃຈຕໍ່ການຮ່ວມມືລະຫວ່າງພາກລັດ - ເອກະຊົນແລະສັງຄົມພົນລະເຮືອນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-17-1",
@@ -2079,7 +2215,7 @@
         },
         {
           "id": "17-18-1",
-          "title": "Statistical capacity indicator for Sustainable Development Goal monitoring",
+          "title": "ອັດຕາສ່ວນຂອງຕົວຊີ້ວັດການພັດທະນາແບບຍືນຍົງທີ່ຜະລິດໃນລະດັບຊາດໂດຍມີການ ຈຳ ແນກຢ່າງເຕັມທີ່ເມື່ອກ່ຽວຂ້ອງກັບເປົ້າ ໝາຍ, ອີງຕາມຫຼັກການພື້ນຖານຂອງສະຖິຕິທາງການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-18-1",
@@ -2087,7 +2223,7 @@
         },
         {
           "id": "17-18-2",
-          "title": "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີກົດ ໝາຍ ສະຖິຕິແຫ່ງຊາດທີ່ປະຕິບັດຕາມຫຼັກການພື້ນຖານຂອງສະຖິຕິທາງການ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-18-2",
@@ -2095,7 +2231,7 @@
         },
         {
           "id": "17-18-3",
-          "title": "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding",
+          "title": "ຈຳ ນວນປະເທດທີ່ມີແຜນສະຖິຕິແຫ່ງຊາດທີ່ໄດ້ຮັບການສະ ໜັບ ສະ ໜູນ ຢ່າງເຕັມສ່ວນແລະ ກຳ ລັງຈັດຕັ້ງປະຕິບັດ, ໂດຍແຫຼ່ງທຶນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-18-3",
@@ -2103,7 +2239,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
+          "title": "ມູນຄ່າເງິນໂດລາຂອງຊັບພະຍາກອນທັງ ໝົດ ທີ່ມີໃຫ້ເພື່ອສ້າງຄວາມເຂັ້ມແຂງດ້ານສະຖິຕິໃນປະເທດ ກຳ ລັງພັດທະນາ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-19-1",
@@ -2111,11 +2247,75 @@
         },
         {
           "id": "17-19-2",
-          "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
+          "title": "ອັດຕາສ່ວນຂອງປະເທດທີ່ (a) ໄດ້ ດຳ ເນີນການ ສຳ ຫຼວດພົນລະເມືອງແລະທີ່ຢູ່ອາໄສຢ່າງ ໜ້ອຍ ໜຶ່ງ ຄັ້ງໃນ 10 ປີທີ່ຜ່ານມາ; ແລະ (ຂ) ບັນລຸການຂຶ້ນທະບຽນ 100 ເປີເຊັນແລະການຂຶ້ນທະບຽນເສຍຊີວິດ 80 ເປີເຊັນ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site-laos-demo/17-19-2",
           "status": "notstarted"
+        },
+        {
+          "id": "17-19-3",
+          "title": "ຈໍານວນທະບຽນຜູ້ເສຍຊີວິດທີ່ບັນທຶກໄວ້",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/17-19-3",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "18",
+      "title": "ຊີວິດປອດໄພຈາກ Unexploded Ordnance (UXO)",
+      "indicators": [
+        
+        {
+          "id": "18-1-1",
+          "title": "ຈໍາ ນວນ ຜູ້ ເສຍ ຊີ ວິດ UXO ທີ່ ໄດ້ ຮັບ ການ ລາຍ ງານ (disaggated by age group and sex)- ໄດ້ ຮັບ ບາດ ເຈັບ [18.1.1 ]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-1-1",
+          "status": "complete"
+        },
+        {
+          "id": "18-1-2",
+          "title": "ເປີເຊັນຂອງປະຊາກອນໃນຫມູ່ບ້ານທີ່ເປິເປື້ອນທີ່ມີຂໍ້ມູນກ່ຽວກັບເຂດອັນຕະລາຍທີ່ໄດ້ຮັບການຢືນຢັນໃນຫມູ່ບ້ານຂອງເຂົາເຈົ້າ (ບໍ່ສັງລວມໂດຍກຸ່ມອາຍຸ, ເພດແລະບຸກຄົນທີ່ມີຄວາມພິການ) [18.1.2 ]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-1-2",
+          "status": "complete"
+        },
+        {
+          "id": "18-2-1",
+          "title": "ເປີເຊັນຂອງພື້ນທີ່ອັນຕະລາຍທີ່ສໍາຄັນສູງທີ່ຍັງເຫຼືອທີ່ຈະແຈ້ງ (ບໍ່ສັງລວມຕາມລະດັບຄວາມທຸກຍາກຂອງຫມູ່ບ້ານ) [18.2.1]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-2-1",
+          "status": "complete"
+        },
+        {
+          "id": "18-2-2",
+          "title": "ຈໍານວນຫມູ່ບ້ານທີ່ຖືກກໍານົດວ່າເປັນ 'ຄົນທຸກຍາກ' ກັບເຂດອັນຕະລາຍທີ່ໄດ້ຮັບການຢືນຢັນທີ່ຍັງເຫຼືອທີ່ຈະແຈ້ງ [18.2.2 ]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-2-2",
+          "status": "complete"
+        },
+        {
+          "id": "18-3-1",
+          "title": "ອັດຕາສ່ວນຂອງຜູ້ລອດຊີວິດUXO ອາຍຸທີ່ເຄື່ອນໄຫວທີ່ລົງທະບຽນບໍ່ສາມາດຫາລາຍໄດ້ພຽງພໍກັບການເຂົ້າເຖິງຄວາມປອດໄພດ້ານລາຍຮັບພື້ນຖານ [18.3.1 ]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-3-1",
+          "status": "complete"
+        },
+        {
+          "id": "18-3-2",
+          "title": "ເປີເຊັນຂອງຜູ້ລອດຊີວິດ UXO ທີ່ໄດ້ຈົດທະບຽນເປັນຫຼັກໃນການບໍລິການດ້ານສຸຂະພາບ, ການສຶກສາ ແລະ ການຈ້າງງານ [18.3.2 ]",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site-laos-demo/18-3-2",
+          "status": "complete"
         }]
     }
   }]

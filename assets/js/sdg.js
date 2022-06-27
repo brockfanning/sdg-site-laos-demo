@@ -1125,14 +1125,14 @@ var indicatorModel = function (options) {
   /**
  * Constants to be used in indicatorModel.js and helper functions.
  */
-var UNIT_COLUMN = 'Units';
-var SERIES_COLUMN = 'Series';
+var UNIT_COLUMN = 'UNIT_MEASURE';
+var SERIES_COLUMN = 'SERIES';
 var GEOCODE_COLUMN = 'GeoCode';
 var YEAR_COLUMN = 'Year';
 var VALUE_COLUMN = 'Value';
 // Note this headline color is overridden in indicatorView.js.
 var HEADLINE_COLOR = '#777777';
-var GRAPH_TITLE_FROM_SERIES = false;
+var GRAPH_TITLE_FROM_SERIES = true;
 
   /**
  * Model helper functions with general utility.
@@ -2993,7 +2993,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapOptions: {"minZoom":5,"maxZoom":10,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
       mapLayers: [],
       precision: precision,
       decimalSeparator: decimalSeparator,
@@ -3012,8 +3012,8 @@ var indicatorView = function (model, options) {
     var helpers = 
 (function() {
 
-  var HIDE_SINGLE_SERIES = true;
-var HIDE_SINGLE_UNIT = true;
+  var HIDE_SINGLE_SERIES = false;
+var HIDE_SINGLE_UNIT = false;
 
   /**
  * @param {Object} args
@@ -5485,9 +5485,9 @@ $(function() {
             this.form = null;
             this.currentDisaggregation = 0;
             this.displayedDisaggregation = 0;
-            this.seriesColumn = 'Series';
-            this.unitsColumn = 'Units';
-            this.displayForm = false;
+            this.seriesColumn = 'SERIES';
+            this.unitsColumn = 'UNIT_MEASURE';
+            this.displayForm = null;
             this.updateDisaggregations();
         },
 

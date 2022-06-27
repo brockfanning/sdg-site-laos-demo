@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="lo" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://brockfanning.github.io/sdg-data-laos-demo/lo',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded.
+  dataRounding: function(value) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  language: 'lo',
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>
+        
+        ຕົວຊີ້ວັດ 1.2.1.a -
+        
+        global_indicators.1-2-1-a-title - ຕົວຊີ້ວັດ ສຳ ລັບເປົ້າ ໝາຍ ການພັດທະນາແບບຍືນຍົງ
+    </title>
+
+
+
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <link rel="canonical" href="/">
+
+        <!--[if IE 9]>
+        <script src="/sdg-site-laos-demo/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/sdg-site-laos-demo/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/sdg-site-laos-demo/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/sdg-site-laos-demo/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/sdg-site-laos-demo/assets/img/favicons/favicon.ico" />
+
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site-laos-demo/assets/css/style.css?v=20220627095236">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/sdg-site-laos-demo/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-lo
+layout-indicator
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"ບໍ່ມີເພດ;","default_contrast":"ກົງກັນຂ້າມໃນຕອນຕົ້ນ","disable_high_contrast":"ປິດການໃຊ້ງານກົງກັນຂ້າມສູງ","disclaimer":"ນີ້ແມ່ນເວບໄຊທ໌ການພັດທະນາ. ພວກເຮົາຍິນດີຮັບ ຄຳ ຄິດເຫັນ <a href=\"mailto:%email_address\"> ຂອງທ່ານ </a>.","enable_high_contrast":"ເປີດໃຊ້ຄວາມຄົມຊັດສູງ","high_contrast":"ກົງກັນຂ້າມສູງ","skip_link":"ຂ້າມໄປຫາເນື້ອຫາຫຼັກ","tag_line":"17 ເປົ້າ ໝາຍ ໃນການຫັນປ່ຽນໂລກຂອງພວກເຮົາ","toggle_menu":"ເມນູປິດ. ກົດເພື່ອຂະຫຍາຍຫຼືຫຍໍ້ເມນູ.","toggle_search":"ຄົ້ນຫາສະຫຼັບ. ກົດເພື່ອຂະຫຍາຍຫຼືຍຸບແຖບຄົ້ນຫາ."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">ຂ້າມໄປຫາເນື້ອຫາຫຼັກ</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title"></h2>
+    <p class="internet-explorer-message-body"></p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">ບໍ່ມີເພດ;</strong>
+    
+    ນີ້ແມ່ນເວບໄຊທ໌ການພັດທະນາ. ພວກເຮົາຍິນດີຮັບ ຄຳ ຄິດເຫັນ <a href="mailto:%email_address"> ຂອງທ່ານ </a>.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/sdg-site-laos-demo/" id="home">
+    <img src="/sdg-site-laos-demo/assets/img/SDG_logo.png" alt="ເປົ້າ ໝາຍ ການພັດທະນາແບບຍືນຍົງ - 17 ເປົ້າ ໝາຍ ໃນການຫັນປ່ຽນໂລກຂອງພວກເຮົາ" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-laos-demo/goals">ເປົ້າ ໝາຍ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-laos-demo/reporting-status">ສະຖານະພາບການລາຍງານ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-laos-demo/about">ກ່ຽວກັບ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site-laos-demo/guidance">ການຊີ້ ນຳ</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/sdg-site-laos-demo/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">ຄົ້ນຫາ</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="ຄົ້ນຫາ">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="ຄົ້ນຫາ" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-laos-demo/en/1-2-1-a/">
+                English
+            </a>
+        </li></ul>
+</div>
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site-laos-demo/en/1-2-1-a/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="ເປີດໃຊ້ຄວາມຄົມຊັດສູງ" aria-label="ເປີດໃຊ້ຄວາມຄົມຊັດສູງ"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+
+<script type="text/template" id="item_template">
+  <% _.each(fields, function(fieldItem) { %>
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
+      <button class='accessBtn' tabindex='0' aria-expanded='false'
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+        <% }%>
+      >
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
+          <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only">ສະແດງ ໝວດ ຍ່ອຍ: <%=translations.t(fieldItem.label)%></span>
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
+      </button>
+      <div class="variable-options">
+        <fieldset>
+          <legend class="sr-only">ປະເພດຍ່ອຍ - <%=translations.t(fieldItem.field)%></legend>
+          <div>
+            <button data-type="select">ເລືອກທັງຫມົດ</button>
+            <button data-type="clear">ລ້າງທຸກຢ່າງ</button>
+          </div>
+          <% _.each(fieldItem.values, function(item) { %>
+            <label>
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            </label>
+          <% }); %>
+        </fieldset>
+      </div>
+
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">ສາມາດໃຊ້ໄດ້ເມື່ອ '% field' ຖືກເລືອກ
+        </div>
+        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+          ບໍ່ມີທາງເລືອກໃດໆເພາະຕົວກອງຂ້າງເທິງ
+        </div>
+      <% }%>
+
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" id="units_template">
+  
+    <h4>ຫົວ ໜ່ວຍ ວັດແທກ</h4>
+    <fieldset>
+      <legend class="sr-only">ຫົວ ໜ່ວຍ ວັດແທກ</legend>
+      <% _.each(units, function(unitsItem, index) { %>
+        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+</script>
+
+<script type="text/template" id="series_template">
+  
+    <h4>ຊຸດ</h4>
+    <fieldset>
+      <legend class="sr-only">ຊຸດ</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+</script>
+
+<script>translations['indicator'] = {"annotation_2030_target":"ເປົ້າ ໝາຍ ປີ 2030","announce_data_added":"ຕາຕະລາງແລະຕາຕະລາງທີ່ຖືກປັບປຸງເພື່ອປະກອບມີຂໍ້ມູນ.","announce_data_not_available":"ຕາຕະລາງແລະຕາຕະລາງບໍ່ມີຂໍ້ມູນ.","announce_data_removed":"ຕາຕະລາງແລະຕາຕະລາງຖືກປັບປຸງເພື່ອຍົກເວັ້ນຂໍ້ມູນ.","chart":"ຕາຕະລາງ","chart_annotation":"ຄຳ ບັນຍາຍຕາຕະລາງ","clear_all":"ລ້າງທຸກຢ່າງ","clear_selections":"ເລືອກທີ່ຈະແຈ້ງ","data_keyboard_navigation":"ກົດເຂົ້າເພື່ອຄົ້ນຫາຈຸດຂໍ້ມູນດ້ວຍປຸ່ມລູກສອນຊ້າຍແລະຂວາ.","data_not_available":"ຂໍ້ມູນນີ້ບໍ່ມີ. ກະລຸນາເລືອກຂໍ້ມູນທາງເລືອກເພື່ອສະແດງ.","data_tabular_alternative":"ສຳ ລັບຕົວເລືອກຂໍ້ມູນຕາຕະລາງເບິ່ງຕາຕະລາງຕາຕະລາງ.","dataset_size_warning":"ມີຊຸດຂໍ້ມູນຫຼາຍເກີນໄປທີ່ຈະສະແດງໃນຕາຕະລາງ. ບໍ່ແມ່ນທັງ ໝົດ ຈະຖືກສະແດງຈົນກວ່າທ່ານຈະເລືອກບາງຕົວເລືອກ.","download_chart":"ດາວໂຫລດຕາຕະລາງ CSV","download_chart_image":"ດາວໂຫລດຮູບພາບຕາຕະລາງ","download_chart_image_title":"ດາວໂຫລດຕາຕະລາງເປັນຮູບພາບ","download_csv":"ດາວໂຫລດ CSV","download_csv_title":"ດາວໂຫລດເປັນ CSV","download_geojson":"ດາວໂຫລດ GeoJSON","download_geojson_title":"ດາວໂຫລດເປັນ GeoJSON","download_headline":"ດາວໂຫລດຫົວເລື່ອງ CSV","download_headline_title":"ດາວໂຫລດຂໍ້ມູນຫົວຂໍ້ເປັນ CSV","download_source":"ແຫລ່ງດາວໂຫລດ CSV","download_source_sdmx":"ແຫລ່ງດາວໂຫລດ SDMX","download_source_sdmx_title":"ດາວໂຫລດຂໍ້ມູນແຫຼ່ງທີ່ເປັນ SDMX","download_source_title":"ດາວໂຫລດຂໍ້ມູນແຫຼ່ງຂໍ້ມູນເປັນ CSV","download_table":"ດາວໂຫລດຕາຕະລາງ CSV","edit":"ແກ້ໄຂ","edit_configuration":"ແກ້ໄຂການຕັ້ງຄ່າ","edit_data":"ແກ້ໄຂຂໍ້ມູນ","edit_metadata":"ແກ້ໄຂເມຕາເດຕາ","footnote":"ໝາຍ ເຫດ","geographical_area":"ເຂດພູມສາດ","global_metadata":"Metadata ທົ່ວໂລກ","global_metadata_blurb":"ຕາຕະລາງນີ້ສະ ໜອງ ຂໍ້ມູນກ່ຽວກັບຂໍ້ມູນ metadata ສຳ ລັບຕົວຊີ້ວັດ SDG ຕາມທີ່ ກຳ ນົດໂດຍຄະນະ ກຳ ມະການສະຖິຕິຂອງສະຫະປະຊາຊາດ. <a href=\"https://unstats.un.org/sdgs/metadata/\"> ຂໍ້ມູນ metadata ທົ່ວໂລກ </a> ແມ່ນໃຫ້ໂດຍພະແນກສະຖິຕິຂອງສະຫະປະຊາຊາດ.","legend_help":"ກົດທີ່ເທບນິຍາຍເພື່ອ ກຳ ນົດເສັ້ນສ່ວນຕົວອອກຈາກຕາຕະລາງ.","loading":"ກຳ ລັງໂຫລດ","loading_map":"ກຳ ລັງໂຫລດແຜນທີ່","map":"ແຜນທີ່","map_search":"ຄົ້ນຫາ","map_search_hide":"ເຊື່ອງການຄົ້ນຫາ","map_search_show":"ສະແດງການຄົ້ນຫາ","map_year_slider":"ແຖບເລື່ອນປີ","national_metadata":"Metadata ແຫ່ງຊາດ","national_metadata_blurb":"ຕາຕະລາງນີ້ສະ ໜອງ metadata ສຳ ລັບຕົວຊີ້ວັດຕົວຈິງທີ່ມີຈາກສະຖິຕິ% country_name ທີ່ຢູ່ໃກ້ກັບຕົວຊີ້ວັດ SDG ທົ່ວໂລກທີ່ສອດຄ້ອງກັນ. ກະລຸນາຮັບຊາບວ່າເຖິງແມ່ນວ່າຕົວຊີ້ວັດ SDG ທົ່ວໂລກສາມາດ ນຳ ໃຊ້ໄດ້ຢ່າງເຕັມສ່ວນຈາກສະຖິຕິ% country_adjective, ຕາຕະລາງນີ້ຄວນໄດ້ຮັບການປຶກສາຫາລືກ່ຽວກັບຂໍ້ມູນກ່ຽວກັບວິທີການແຫ່ງຊາດແລະຂໍ້ມູນ metadata ອື່ນໆ% country_adjective.","next":"ຕົວຊີ້ວັດຕໍ່ໄປ","no_data_hint":"ບໍ່ມີທາງເລືອກໃດໆເພາະຕົວກອງຂ້າງເທິງ","plot_legend_description":"ນິທານເລື່ອງດິນຕອນ: ບັນຊີລາຍຊື່ຂອງສາຍລວມຢູ່ໃນຕາຕະລາງ","previous":"ຕົວຊີ້ວັດທີ່ຜ່ານມາ","select_all":"ເລືອກທັງຫມົດ","series":"ຊຸດ","series_help":"ເລືອກປະເພດຕ່າງໆຈາກແບບເລື່ອນລົງລຸ່ມເພື່ອເບິ່ງລາຍລະອຽດຕ່າງໆຂອງຂໍ້ມູນ. ບາງບ່ອນຈະບໍ່ສາມາດໃຊ້ໄດ້ຈົນກວ່າລະດັບທີ່ສູງກວ່າຈະຖືກຄັດເລືອກ.","source":"ແຫຼ່ງຂໍ້ມູນ","sources":"ແຫຼ່ງຂໍ້ມູນ","status":"ສະຖານະພາບຕົວຊີ້ວັດ","sub_categories":"ປະເພດຍ່ອຍ","sub_categories_show":"ສະແດງ ໝວດ ຍ່ອຍ:","table":"ຕາຕະລາງ","table_column_sort":"ກົດເພື່ອຈັດຮຽງຕາມຖັນນີ້","tags":"ປ້າຍ","unit":"ຫົວໜ່ວຍ","unit_of_measurement":"ຫົວ ໜ່ວຍ ວັດແທກ","units_type":"ປະເພດຫົວ ໜ່ວຍ","variable_hint":"ສາມາດໃຊ້ໄດ້ເມື່ອ '% field' ຖືກເລືອກ","view_indicator_list":"ເບິ່ງລາຍການຕົວຊີ້ວັດຂອງເປົ້າ ໝາຍ ນີ້"};</script>
+
+<script>translations['data'] = null;</script>
+
+
+<div class="container">
+  
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-laos-demo/">ເຮືອນ</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-laos-demo/goals">ເປົ້າ ໝາຍ</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site-laos-demo/1" title="ຢຸດຕິຄວາມທຸກຍາກໃນທຸກຮູບແບບຂອງມັນຢູ່ທົ່ວທຸກແຫ່ງ">ເປົ້າ ໝາຍ 1</a>
+        </li>
+        
+    </ol>
+</nav>
+
+
+  
+</div>
+<div class="heading goal-banner indicator goal-1">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/sdg-site-laos-demo/1" title="ເບິ່ງລາຍການຕົວຊີ້ວັດຂອງເປົ້າ ໝາຍ ນີ້">
+                    <img src="/site/assets/img/goals/lo/1.svg"
+                        alt="ບໍ່ມີຄວາມທຸກຍາກ - ເປົ້າ ໝາຍ 1"
+                        id="goal-1"
+                        class="goal-icon-image goal-icon-image-svg" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
+            
+                <div>
+                    <h1>
+                        
+                        ຕົວຊີ້ວັດ 1.2.1.a
+                        
+                        <span class="lead-copy">global_indicators.1-2-1-a-title</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container goal-1" role="main">
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+<div class="row"
+  id="indicatorData"
+  data-indicatorid='indicator_1-2-1-a'
+  data-id="1-2-1-a"
+  data-country="Lao PDR"
+  data-charttitle="global_indicators.1-2-1-a-title"
+  data-charttitles="null"
+  data-measurementunit=""
+  data-xaxislabel=""
+  data-showdata="false"
+  data-graphtype="line"
+  data-graphtypes="null"
+  data-geocoderegex=""
+  data-showmap=""
+  data-startvalues="null"
+  data-graphlimits="null"
+  data-stackeddisaggregation=""
+  data-graphannotations="null"
+  data-graphtargetlines="null"
+  data-graphseriesbreaks="null"
+  data-indicatordownloads="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
+  data-compositebreakdownlabel=""
+  data-precision="null"
+>
+  
+  <div id="indicator-main" class="indicator-main col-md-12">
+  
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+        <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>Metadata ແຫ່ງຊາດ</button>
+</li>
+
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Metadata ທົ່ວໂລກ</button>
+</li>
+
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Sources tab"
+>ແຫຼ່ງຂໍ້ມູນ</button>
+</li>
+  
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">ແກ້ໄຂ</a>
+        </li>
+    
+</ul>
+
+<div class="tab-content">
+    
+        <div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                ຕາຕະລາງນີ້ສະ ໜອງ metadata ສຳ ລັບຕົວຊີ້ວັດຕົວຈິງທີ່ມີຈາກສະຖິຕິ% country_name ທີ່ຢູ່ໃກ້ກັບຕົວຊີ້ວັດ SDG ທົ່ວໂລກທີ່ສອດຄ້ອງກັນ. ກະລຸນາຮັບຊາບວ່າເຖິງແມ່ນວ່າຕົວຊີ້ວັດ SDG ທົ່ວໂລກສາມາດ ນຳ ໃຊ້ໄດ້ຢ່າງເຕັມສ່ວນຈາກສະຖິຕິ% country_adjective, ຕາຕະລາງນີ້ຄວນໄດ້ຮັບການປຶກສາຫາລືກ່ຽວກັບຂໍ້ມູນກ່ຽວກັບວິທີການແຫ່ງຊາດແລະຂໍ້ມູນ metadata ອື່ນໆ% country_adjective.
+            </p>
+            <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ເປົ້າ ໝາຍ </th>
+        <td>
+          
+            <p> ເປົ້າຫມາຍທີ 1. ລົບລ້າງຄວາມທຸກຍາກທຸກຮູບແບບໃນທົ່ວໂລກ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ເປົ້າຫມາຍ </th>
+        <td>
+          
+            <p> 1.2 ພາຍໃນປີ 2030, ຫຼຸດຈຳນວນອັດຕາສ່ວນຜູ້ຊາຍ, ແມ່ຍິງ ແລະ ເດັກນ້ອຍ ໃນທຸກເກນອາຍຸ ທີ່ຍັງທຸກຍາກໃນທຸກດ້ານໃຫ້ໄດ້ເຄິ່ງໜຶ່ງ ໂດຍອີງໃສ່ນິຍາມຄວາມທຸກຍາກແຫ່ງຊາດ.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຕົວຊີ້ວັດ </th>
+        <td>
+          
+            <p>1.2.1 ເປີເຊັນຂອງປະຊາກອນທີ່ດໍາລົງຊີວິດຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກຂອງຊາດ, ໂດຍເພດແລະອາຍຸ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຊຸດ </th>
+        <td>
+          
+            <p> ອັດຕາສ່ວນຂອງປະຊາກອນທີ່ດໍາລົງຊີວິດຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການປັບປຸງເມຕາເດຕາ </th>
+        <td>
+          
+            <p>23 ມິຖຸນາ 2021</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຕົວຊີ້ວັດທີ່ກ່ຽວຂ້ອງ </th>
+        <td>
+          
+            <p> ຕົວຊີ້ວັດ 1.1.1: ອັດຕາສ່ວນຂອງປະຊາກອນຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກສາກົນ, ໂດຍເພດ, ອາຍຸ, ສະຖານະພາບການຈ້າງງານ ແລະ ສະຖານທີ່ທາງພູມສາດ (ຕົວເມືອງ/ຊົນນະບົດ)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການຈັດຕັ້ງ </th>
+        <td>
+          
+            <p> ສູນສະຖິຕິແຫ່ງຊາດ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຜູ້ຕິດຕໍ່ </th>
+        <td>
+          
+            <p>ທ່ານ ວິໄລສຸກ ສີສຸລາດ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຕິດຕໍ່ ໜ່ວຍ ງານອົງກອນ </th>
+        <td>
+          
+            <p> ກົມສະຖິຕິສັງຄົມ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຕິດຕໍ່ຜູ້ ທຳ ງານ </th>
+        <td>
+          
+            <p> ຮອງຫົວໜ້າກົມ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ໂທລະສັບຕິດຕໍ່ </th>
+        <td>
+          
+            <p>+856 20 55 795 043; +856 21 214 740</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຕິດຕໍ່ເມລ </th>
+        <td>
+          
+            <p> ບໍ່ມີ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ອີເມວຕິດຕໍ່ </th>
+        <td>
+          
+            <p> <a href="mailto:vilaysooks@gmail.com">vilaysooks@gmail.com</a>; <a href="mailto:lstats@lsb.gov.la">lstats@lsb.gov.la</a>; <a href="https://www.lsb.gov.la">https://www.lsb.gov.la</a> </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ນິຍາມແລະແນວຄິດ </th>
+        <td>
+          
+            <p> <strong> ນິຍາມ:</strong></p>
+<p><p>ອັດຕາຄວາມທຸກຍາກຂອງຊາດແມ່ນອັດຕາສ່ວນຂອງປະຊາກອນທັງຫມົດທີ່ດໍາລົງຊີວິດຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ. ອັດຕາຄວາມທຸກຍາກໃນຊົນນະບົດແມ່ນອັດຕາສ່ວນຂອງປະຊາກອນຊົນນະບົດທີ່ດໍາລົງຊີວິດຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກຂອງຊາດ. ອັດຕາຄວາມທຸກຍາກໃນຕົວເມືອງແມ່ນອັດຕາສ່ວນຂອງປະຊາກອນເມືອງທີ່ດໍາລົງຊີວິດຕ່ໍາກວ່າເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ. </p> <p> <strong> ແນວຄວາມຄິດ:</strong></p><p>ໃນການປະເມີນຄວາມທຸກຍາກໃນລາວ PDR, ແລະວິທີທີ່ດີທີ່ສຸດໃນການຫຼຸດຜ່ອນຄວາມທຸກຍາກຕາມນິຍາມຂອງຊາດ, ສຸມໃສ່ການມີເສັ້ນຄວາມທຸກຍາກທີ່ຖືວ່າເຫມາະສົມສໍາລັບ Lao PDR.  ເຊັ່ນດຽວກັນ, ພາຍໃນ Lao PDR, ຄວາມແຕກຕ່າງຂອງຄ່າໃຊ້ຈ່າຍໃນການດໍາລົງຊີວິດໃນທົ່ວແຂວງ ແລະ ລະຫວ່າງຕົວເມືອງ ແລະ ເຂດຊົນນະບົດ ຕ້ອງໄດ້ຮັບຜິດຊອບໃນການກໍານົດເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ. </p>
+</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຫົວ ໜ່ວຍ ວັດແທກ </th>
+        <td>
+          
+            <p> ເປີເຊັນ, %</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການຈັດປະເພດ </th>
+        <td>
+          
+            <p> ບໍ່ມີ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ແຫຼ່ງຂໍ້ມູນ </th>
+        <td>
+          
+            <p> Lao Expenditure and Consumption Survey (LECS) </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ວິທີການເກັບ ກຳ ຂໍ້ມູນ </th>
+        <td>
+          
+            <p> ງານLECS 2018-2019 ເປັນຮອບທີຫົກ ແລະ ຫຼ້າສຸດທີ່ດໍາເນີນໃນ Lao PDR. </p>
+<p> <strong> ວິ ທີ ການ ສໍາ ຫຼວດ ແລະ ການ ຄຸ້ມ ຄອງ</strong>: ການ ສໍາ ຫຼວດ ຕົວ ຢ່າງ ທີ່ ດໍາ ເນີນ ຢູ່ ໃນ ທຸກ ແຂວງ (17) ແລະ ທ້ອງ ຖິ່ນ ທົ່ວ ປະ ເທດ. </p>
+<p> <strong> Fieldwork</strong>: 12 ເດືອນ, ນັບແຕ່ເດືອນມິຖຸນາ 2018 ຫາ ເດືອນມິຖຸນາ 2019 (ຫຼ້າສຸດ)</p>
+<p><em><em>ຂໍ້ມູນລາຍຈ່າຍໃນຄົວເຮືອນ ແລະ ລາຍຮັບ</em> ຖືກເກັບໃນແຕ່ລະເດືອນໂດຍໃຊ້ຫຼັກການບັນທຶກປະຈໍາວັນ. ການເຮັດທຸລະກໍາທັງຫມົດໄດ້ຖືກບັນທຶກໄວ້ໃນປວັດແລະຈໍາແນກໂດຍປະເພດຂອງການບໍລິໂພກ, ຫຼືໂດຍຜົນຜະລິດກະສິກໍາແລະທຸລະກິດຂອງຄົວເຮືອນ. <em> ຂໍ້ ມູນ ກ່ຽວ ກັບ ການ ຊື້ ສິນຄ້າ</em> ທີ່ ມີ ອາຍຸ ຍືນ ຍາວ (ທົນ ທານ) ເຊັ່ນ: ເຟີນີເຈີ, ໂທລະພາບ, ລົດຈັກ, ລົດຈັກ ແລະ ອື່ນໆ ກໍ ໄດ້ ຖືກ ບັນທຶກ ໄວ້ ໃນ ໄລຍະ 12 ເດືອນ ຜ່ານ ມາ ເຊັ່ນ ກັນ. <em> ຂໍ້ ມູນ ກ່ຽວ ກັບ ການ ໃຊ້ ເວ ລາ</em> ໄດ້ ຖືກ ຈັບ ໄວ້ ໃນ ກາງ ເດືອນ ສໍາ ລັບ ສະ ມາ ຊິກ ໃນ ຄອບ ຄົວ ທຸກ ຄົນ ທີ່ ມີ ອາ ຍຸ 10 ປີ ແລະ ສູງ ກວ່າ. &lt;/p&gt; <p> <strong> ປະເພດຂອງການສໍາພາດ:</strong> ຫນ້າຕໍ່ຫນ້າ </p><p><strong>ຄຸ້ມຄອງ: </strong>ແຕ່ລະທີມປະກອບມີ 1 ຜູ້ດູແລ ແລະ 2 enumerators ສໍາລັບແຕ່ລະບ້ານ. </p> <p> <strong> ບັນທຶກການເກັບກໍາຂໍ້ມູນ: </strong>ການຝຶກອົບຮົມສໍາລັບຄູຝຶກ ແລະ ຜູ້ຄຸ້ມຄອງໄດ້ດໍາເນີນເປັນເວລາຫ້າ (5) ວັນທີ່ພະແນກສະຖິຕິ, ນະຄອນ Vientiane Capital, ໂດຍການເຂົ້າຮ່ວມຂອງພະນັກງານທັງຫມົດຈາກພາກສະຖິຕິຈາກ 17 ແຂວງ.  ການຝຶກອົບຮົມສໍາລັບenumerators ໃຊ້ເວລາ 11 ວັນເພື່ອກວມເອົາທັງຫມົດ 17 ແຂວງ. </p> <p> <strong> ຂັ້ນຕອນການຕົວຢ່າງ</strong>: ການອອກແບບຕົວຢ່າງແລະການຄັດເລືອກ (ຕົວຢ່າງສອງຂັ້ນ)</p><p>ຂັ້ນຕອນທໍາອິດ: ຄໍາບັນຍາຍຂອງບ້ານຕົວຢ່າງ; ຂັ້ນຕອນທີສອງ: ການຄັດເລືອກຂອງຄົວເຮືອນຕົວຢ່າງພາຍໃນບ້ານຕົວຢ່າງ</p><h2><strong>ສອບຖາມ</strong><p><p><p>4 ສອບຖາມໄດ້ຖືກນໍາໃຊ້ເພື່ອເກັບກໍາຂໍ້ມູນ LECS VI :<br />- ສອບຖາມໃນຄອບຄົວ<br />- แผ่น Dairy<br />- Time Use Questionnaire<br />- Village Questionnaire<br />- ຖາມລາຄາ </p><p><p> ສໍາລັບວິທີການລະອຽດ, ກະລຸນາເບິ່ງບົດລາຍງານການສໍາຫຼວດ </p><p>(Link provided in the reference section). </p>
+</p></p></p></h2></em></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ປະຕິທິນການເກັບ ກຳ ຂໍ້ມູນ </th>
+        <td>
+          
+            <p> ທຸກໆຫ້າປີ, ການເກັບສະສົມຄັ້ງຕໍ່ໄປຈະມີຂຶ້ນໃນເດືອນມິຖຸນາ 2024 ຫາ ເດືອນມິຖຸນາ 2025</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ປະຕິທິນການປ່ອຍຂໍ້ມູນ </th>
+        <td>
+          
+            <p> ຫນຶ່ງປີຫຼັງຈາກໄລຍະການອ້າງອີງ, ການປ່ອຍຕໍ່ໄປແມ່ນວັນທີ 2026</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຜູ້ໃຫ້ບໍລິການຂໍ້ມູນ </th>
+        <td>
+          
+            <p> ສູນສະຖິຕິແຫ່ງຊາດ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຜູ້ລວບລວມຂໍ້ມູນ </th>
+        <td>
+          
+            <p> Lao Statistics Bureau ຮ່ວມມືກັບທະນາຄານໂລກ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ພາລະບົດບາດຂອງສະຖາບັນ </th>
+        <td>
+          
+            <p> ໂດຍອີງຕາມກົດຫມາຍວ່າດ້ວຍສະຖິຕິLao PDR ປີ 2010 ແລະ 2017, LSB ໄດ້ປະຕິບັດການສໍາຫຼວດສໍາມະໂນຄົວ ແລະ ການສໍາຫຼວດຕົວຢ່າງຂອງຊາດ ແລະ ການສໍາຫຼວດສະເພາະອື່ນໆ ທີ່ໄດ້ກໍານົດໄວ້ໃນຍຸດທະສາດການພັດທະນາລະບົບສະຖິຕິແຫ່ງຊາດ (SDNSS) ໃນແຕ່ລະໄລຍະ. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ເຫດຜົນ </th>
+        <td>
+          
+            <p> ການຕິດຕາມກວດກາຄວາມທຸກຍາກຂອງຊາດແມ່ນມີຄວາມສໍາຄັນສໍາລັບບັນດານະໂຍບາຍການພັດທະນາສະເພາະປະເທດ. ເສັ້ນ ທາງ ຄວາມ ທຸກ ຍາກ ແຫ່ງ ຊາດ ຖືກ ນໍາ ໃຊ້ ເພື່ອ ເຮັດ ໃຫ້ ການ ປະ ເມີນ ຄວາມ ທຸກ ຍາກ ທີ່ ສອດ ຄ່ອງ ກັບ ສະ ຖາ ນະ ການ ເສດ ຖະ ກິດ ແລະ ສັງ ຄົມ ສະ ເພາະ ຂອງ ປະ ເທດ ແລະ ບໍ່ ມີ ຈຸດ ປະ ສົງ ເພື່ອ ປຽບ ທຽບ ກັບ ອັດຕາ ຄວາມ ທຸກ ຍາກ ຂອງ ນາໆ ຊາດ. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຄຳ ເຫັນແລະຂໍ້ ຈຳ ກັດ </th>
+        <td>
+          
+            <p> Caveats ແລະ ຂໍ້ ຈໍາ ກັດ ທີ່ ມີ ຢູ່ ໃນ ການ ສໍາ ຫຼວດ ຂໍ້ ມູນ ນໍາ ໃຊ້. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ວິທີການ ຄຳ ນວນ </th>
+        <td>
+          
+            <p> <img src="data:image/png;base64,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" /> </p>
+<p> ບ່ອນທີ່ <em>I</em> (.) ແມ່ນຫນ້າທີ່ຕົວຊີ້ວັດທີ່ໃຊ້ເວລາໃນມູນຄ່າ 1 ຖ້າການສະແດງອອກbracketed ແມ່ນຄວາມຈິງແລະ 0, ຖ້າບໍ່ດັ່ງນັ້ນ. ຖ້າການບໍລິໂພກຫຼືລາຍຮັບສ່ວນບຸກຄົນ y<sub>i</sub> ແມ່ນຫນ້ອຍກວ່າເສັ້ນຄວາມທຸກຍາກແຫ່ງຊາດ <em>z</em> (ຕົວຢ່າງ, ໃນຄໍາສັບທີ່ແນ່ນອນແຖວອາດຈະເປັນລາຄາຂອງການສັງລວມການບໍລິໂພກຫຼືໃນແງ່ທີ່ຂ້ອນຂ້າງເປັນເປີເຊັນຂອງການແຈກຢາຍລາຍຮັບ), ຈາກນັ້ນ<em> I</em> (.) ແມ່ນເທົ່າກັບ 1 ແລະບຸກຄົນແມ່ນນັບບໍ່ດີ. N<sub>p</sub> ແມ່ນຈໍານວນທັງຫມົດ, ຕົວເມືອງ ຫຼື ຊົນນະບົດຂອງຄົນທຸກຍາກ. <em> ນ</em> ແມ່ນປະຊາກອນທັງຫມົດ, ຕົວເມືອງ ຫຼື ຊົນນະບົດ. </p>
+<p> ອັດຕາຄວາມທຸກຍາກຂອງຊາດໃຊ້ເສັ້ນຄວາມທຸກຍາກສະເພາະປະເທດ, ສະທ້ອນໃຫ້ເຫັນສະພາບການເສດຖະກິດ-ສັງຄົມຂອງປະເທດ. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການກວດສອບຄວາມຖືກຕ້ອງ </th>
+        <td>
+          
+            <p> ຂັ້ນ ຕອນ ການ ປຶກ ສາ ຫາ ລື ກັບ ບັນ ດາ ບໍ ລິ ການ ເສັ້ນ ທາງ ກ່ຽວ ກັບ ຂໍ້ ມູນ ແຫ່ງ ຊາດ ທີ່ ສົ່ງ ມາ ໃຫ້ ຕົວ ຊີ້ ວັດ SDGs ໄດ້ ດໍາ ເນີນ ໄປ ກ່ອນ ການ ພິມ ຜົນ ໄດ້ ຮັບ. </p>
+<p> ເຊັ່ນດຽວກັນ, ການເກັບກໍາຂໍ້ມູນ, ການທົບທວນ, ການຢັ້ງຢືນ, ການຄຸ້ມຄອງ ແລະ ການເຜີຍແຜ່ໄດ້ຖືກຊີ້ນໍາໂດຍກົດຫມາຍວ່າດ້ວຍສະຖິຕິ Lao PDR ປີ 2017 ແລະ ສອດຄ່ອງກັບຫຼັກການພື້ນຖານຂອງອົງການສະຫະປະຊາຊາດຂອງສະຖິຕິທາງການ (FPOS). </p>
+<p> ລາຍລະອຽດໃນຫນັງສືສະບັບສຸດທ້າຍ.  </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການຄຸ້ມຄອງຄຸນນະພາບ </th>
+        <td>
+          
+            <p> ການບໍລິຫານຄຸນນະພາບຂອງຕົວຊີ້ວັດແມ່ນໄດ້ຮັບການຊີ້ນໍາໂດຍກົດຫມາຍວ່າດ້ວຍສະຖິຕິ Lao PDR ປີ 2017 ແລະ ສອດຄ່ອງກັບຄໍາແນະນໍາຂອງອົງການສະຫະປະຊາຊາດ FPOS. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ປະກັນຄຸນນະພາບ </th>
+        <td>
+          
+            <p> ຕະຫຼອດໄລຍະທົ່ງນາ, ໄດ້ມີການຜະລິດໂຕະກວດສອບສະຫນາມ (FCTs) ເພື່ອການວິເຄາະ ແລະ ດໍາເນີນການກັບທີມງານສະຫນາມແລະການຊີ້ນໍາໂດຍຜູ້ຄຸ້ມຄອງທັງໃນລະດັບລຸ່ມແລະລະດັບຊາດ. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ການປະເມີນຄຸນະພາບ </th>
+        <td>
+          
+            <p> ໂດຍທົ່ວໄປ, ຄຸນນະພາບຂອງຜົນການສໍາຫຼວດແມ່ນຖືວ່າສູງເນື່ອງຈາກການຄຸ້ມຄອງຄຸນນະພາບ, ການຮັບປະກັນຄຸນນະພາບແລະມາດຕະຖານທີ່ປະຕິບັດໄປພ້ອມກັບອັດຕາການຕອບສະຫນອງສູງສໍາລັບທຸກກຸ່ມ. </p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຄວາມພ້ອມຂອງຂໍ້ມູນແລະການແບ່ງແຍກ </th>
+        <td>
+          
+            <p> LECS ໄດ້ດໍາ ເນີນ ມາ ເປັນ ເວ ລາ ຫ້າ ປີ ນັບ ແຕ່ ປີ 1992/1993. ຂໍ້ມູນມີຕັ້ງແຕ່ປີ 1992/1993 ຫາ 2018/2019. </p>
+<p> Disສັງລວມໂດຍກຸ່ມຊົນນະບົດແລະຕົວເມືອງ, ເພດແລະອາຍຸ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ຄວາມສາມາດປຽບທຽບ / ການບ່ຽງເບນຈາກມາດຕະຖານສາກົນ </th>
+        <td>
+          
+            <p>ວິທີການດຽວກັນກັບຕົວຊີ້ວັດທົ່ວໂລກ</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">ເອກະສານອ້າງອີງແລະເອກະສານ </th>
+        <td>
+          
+            <p> ການສໍາຫຼວດລາຍຈ່າຍ ແລະ ການບໍລິໂພກLao, 2018/2019 <a href="https://laosis.lsb.gov.la/board/BoardList.do?bbs_bbsid=B404">https://laosis.lsb.gov.la/board/BoardList.do?bbs_bbsid=B404</a> </p>
+<p><p>The UNSD SDG Indicators, Metadata repository <a href="https://unstats.un.org/sdgs/metadata/">https://unstats.un.org/sdgs/metadata/</a> </p>
+</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+        </article>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>ຕາຕະລາງນີ້ສະ ໜອງ ຂໍ້ມູນກ່ຽວກັບຂໍ້ມູນ metadata ສຳ ລັບຕົວຊີ້ວັດ SDG ຕາມທີ່ ກຳ ນົດໂດຍຄະນະ ກຳ ມະການສະຖິຕິຂອງສະຫະປະຊາຊາດ. <a href="https://unstats.un.org/sdgs/metadata/"> ຂໍ້ມູນ metadata ທົ່ວໂລກ </a> ແມ່ນໃຫ້ໂດຍພະແນກສະຖິຕິຂອງສະຫະປະຊາຊາດ.</p>
+            <table class="table">
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+        </article>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+
+</div>
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
+  
+  
+
+  
+  
+
+
+  <a class="btn btn-primary" href="https://github.com/sdg-laos/data/tree/develop/data">ແກ້ໄຂຂໍ້ມູນ</a>
+  
+
+  
+  <a class="btn btn-primary" href="https://github.com/sdg-laos/data/tree/develop/meta">ແກ້ໄຂເມຕາເດຕາ</a>
+  
+
+  
+  <a class="btn btn-primary" href="config">ແກ້ໄຂການຕັ້ງຄ່າ</a>
+  
+
+</div>
+
+        </div>
+    
+</div>
+  
+</div>
+  </div>
+</div>
+
+  <a href="#top">ກັບໄປທາງເທີງ</a>
+</div>
+
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">ສ້າງໂດຍໃຊ້ Open SDG</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/sdg-site-laos-demo/contact/">ຕິດຕໍ່ພວກເຮົາ</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/sdg-site-laos-demo/about/cookies-and-privacy/">ຄຸກກີ</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/sdg-site-laos-demo/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'ຊ່ອນ';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'ຄົ້ນຫາ';</script>
+
+<script src='/sdg-site-laos-demo/assets/js/sdg.js?v=20220627095236'></script>
+
+
+    
+    
+    <script src="/sdg-site-laos-demo/assets/js/custom.js?v=20220627095236"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+</body>
+</html>

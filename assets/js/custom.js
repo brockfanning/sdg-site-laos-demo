@@ -1,1 +1,1 @@
-// Add any custom javascript here.
+// Add any custom JavaScript here.
