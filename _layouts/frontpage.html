@@ -2,6 +2,7 @@
 This file is overridden in order to place the hero image.
 
 {% endcomment %}
+
 {% include head.html %}
 {% include header.html %}
 <div id="main-content" class="container" role="main">
@@ -25,17 +26,7 @@ This file is overridden in order to place the hero image.
         <div class="frontpage-goals-grid-description">{{ site.frontpage_goals_grid.description | t | markdownify }}</div>
         {% endif %}
 
-        <div class="goal-tiles">
-            <div class="row no-gutters">
-                {% for goal in page.goals %}
-                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
-                    <a href="{{ goal.url }}">
-                        <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" class="goal-icon-image goal-icon-image-{{ site.goal_image_extension }}"/>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+        {% include components/goal-tiles.html %}
     </div>
     {% endif %}
 
