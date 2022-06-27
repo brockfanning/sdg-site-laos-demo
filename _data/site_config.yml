@@ -87,7 +87,7 @@ frontpage_instructions: ''
 frontpage_introduction_banner:
   title: custom.frontpage_intro_title
   description: custom.frontpage_intro_body
-goal_image_base: /site/assets/img/goals
+goal_image_base: /sdg-site-laos-demo/assets/img/goals
 goal_image_extension: svg
 goals_page:
   title: ''
