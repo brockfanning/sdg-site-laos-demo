@@ -1,11 +1,15 @@
 # Jekyll configuration for Open SDG platform
 
+# NOTE: For "site configuration" in Open SDG, see the following file:
+# _data/site_config.yml
+
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@2.0.0
+remote_theme: open-sdg/open-sdg@2.0.0-dev
 
 # Replace this title as needed.
 title: general.site_title
-url: ""
+# Replace the baseurl with the name of this repository.
+baseurl: "/site"
 environment: staging
 
 # Pages
@@ -36,4 +40,4 @@ exclude:
   - README
   - README.md
   - LICENSE
-
+  - Makefile
